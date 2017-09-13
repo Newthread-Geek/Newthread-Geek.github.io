@@ -1170,7 +1170,7 @@ h1 {
 }
 
 .page2 .m-time-start {
-	margin-top: 20px;
+	margin-top: 6px;
 	color: #060a02;
 	opacity: 0
 }
@@ -2289,5 +2289,5 @@ h1 {
 	box-shadow: 0 0 12px rgba(0,0,0,0.6);
 	background: #ffd89b;
 	background: -webkit-linear-gradient(left top,#ffd89b,#19547b);
-	background: linear-gradient(to bottom right,#e7e4e4,#1c1c1c);
+	background: linear-gradient(to bottom,#e7e4e4,#1c1c1c);
 }
