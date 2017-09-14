@@ -10,6 +10,39 @@
         <meta name="renderer" content="webkit">
         <meta name="author" content="xueyeniliu-jin">
         <meta name="version" content="4.0">
+<script type="text/javascript">
+var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+
+        var browser = navigator.userAgent.toLowerCase();
+
+        var isMobile = false;
+
+        for (var i = 0; i < mobileAgent.length; i++) {
+            if (browser.indexOf(mobileAgent[i]) != -1) {
+                isMobile = true;
+
+                alert("你使用的是移动端"+mobileAgent[i]+"登入");
+ var t=5;
+setInterval("refer()",1000);
+function refer(){
+ if(t==0){
+ location.href="https://newthread-geek.github.io/robot/";
+ }
+ document.getElementById('show').innerHTML=""+t+"秒后自动跳转到聊天机器人界面";
+ t--;
+}
+
+
+                break;
+            }
+        }
+
+
+
+</script>
+
+
+
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -1261,7 +1294,9 @@ $(".loading-page2").fadeOut(1000);
   </div>
 </div>
 </div>
-<div class="mobile" style="text-align: center;z-index: 1000;height: 100%;width: 100%; background-color: white;position: absolute;">手机不支持访问该页面,</br>请用电脑登入,并推荐chrome浏览器访问,</br>手机可以登入<a href="/robot"><button>聊天机器人了解Geek组招新</button></a></div>
+<div class="mobile" style="text-align: center;z-index: 1000;height: 100%;width: 100%; background-color: white;position: absolute;">手机不支持访问该页面,</br>请用电脑登入,并推荐chrome浏览器访问,手机可以登入聊天机器人了解Geek组招新</br>
+<span id="show" style="color: red;"></span>
+</div>
 <div class="loading-page2" style="z-index: 999;height: 100%;width: 100%;">
 <div style="position:absolute;z-index: 999;left:50%;top:73%;">
 
