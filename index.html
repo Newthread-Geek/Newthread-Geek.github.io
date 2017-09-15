@@ -27,15 +27,16 @@ setInterval("refer()",1000);
 function refer(){
  if(t==0){
  location.href="https://newthread-geek.github.io/robot/";
- }
+ document.getElementById('show').style.display="none";
+ document.getElementById('show2').style.display="block";
+
+}
  document.getElementById('show').innerHTML=""+t+"秒后自动跳转到聊天机器人界面";
  t--;
 }
-
-
-                break;
-            }
-        }
+ break;
+}
+}
 
 
 
@@ -1296,6 +1297,7 @@ $(".loading-page2").fadeOut(1000);
 </div>
 <div class="mobile" style="text-align: center;z-index: 1000;height: 100%;width: 100%; background-color: white;position: absolute;">手机不支持访问该页面,</br>请用电脑登入,并推荐chrome浏览器访问,手机可以登入聊天机器人了解Geek组招新</br>
 <span id="show" style="color: red;"></span>
+<span id="show2"style="display: none;color: red;">页面跳转中</span>
 </div>
 <div class="loading-page2" style="z-index: 999;height: 100%;width: 100%;">
 <div style="position:absolute;z-index: 999;left:50%;top:73%;">
