@@ -1841,7 +1841,8 @@ left: 7%;">
  </h3>
 </div>
           <p class="btn-groups">
-            <a href="Mailto:geek@imbajin.com" class="btn" rel="title-tip" title="email:geek@imbajin.com  ">发送email</a>
+
+<a class="btn" data-clipboard-text="geek@imbajin.com" rel="title-tip" title="email:geek@imbajin.com  ">发送email</a>
             <a href="http://shang.qq.com/wpa/qunwpa?idkey=b7ee78c855e834a3ffbe8187a9776219f12e1ac108c53bb5ff1430f19b7028fa" target="_blank" class="btn" rel="title-tip" title="群号：315507378">加入qq群</a>
           </p>
         </div>
@@ -1869,6 +1870,21 @@ left: 7%;">
   <script src='js/CSSPlugin.min.js'></script>
 
 <script src='js/TimelineLite.min.js'></script>
+<script src='http://ovhbzpxyn.bkt.clouddn.com/clipboard.min.js'></script>
+<script type="text/javascript">
+$(document).ready(function(){
+   var clipboard2 = new Clipboard('.btn');
+   clipboard2.on('success', function(e) {
+     console.log(e);
+        alert("已经成功复制邮箱地址到粘贴版")
+      });
+   clipboard2.on('error', function(e) {
+             console.log(e);
+             alert("测试3复制失败！请手动复制")
+    });
+})
+
+</script>
     <script>
 
 
@@ -1906,7 +1922,7 @@ $("#slider-outer").css("visibility","visible");
 $("#xbtton").click(function(){$(".slider__images").css({"width":"0%","height":"0%"});
 $("#slider-outer").css("visibility","hidden");
 });
-</script>}
+</script>
 <script src="js/lunbo.js"></script>
 
     <script>
