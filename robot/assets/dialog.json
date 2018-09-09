@@ -6,7 +6,7 @@
         ],
         "responses": [{
             "content": "极客精神是什么?",
-            "nextXianzhe": ["0001"]
+            "nextXianzhe": ["0006"]
         },{
             "content": "真的吗?",
             "nextXianzhe": ["0001"]
