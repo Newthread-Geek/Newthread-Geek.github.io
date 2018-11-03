@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Hi，萌新</title>
+		<link rel="icon"  href="http://oy9qa3obi.bkt.clouddn.com/geek.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="http://oy9qa3obi.bkt.clouddn.com/geek.ico" type="image/x-icon" />	
+		<link rel="stylesheet" href="http://oy9qa3obi.bkt.clouddn.com/swiper-4.4.1.min.css" />
+        <link href='http://cdn.webfont.youziku.com/webfonts/nomal/123484/37480/5ba64533f629d80b5c293dba.css' rel='stylesheet' type='text/css' />
+		<link href='https://fonts.googleapis.com/css?family=Black+Ops+One|Luckiest+Guy|Sonsie+One|Shojumaru&effect=3d|3d-float|anaglyph|brick-sign|canvas-print|
+            crackle|decaying|destruction|distressed|distressed-wood|emboss|fire|fire-animation|fragile|grass|ice|mitosis|neon|outline|putting-green|
+            scuffed-steel|shadow-multiple|splintered|static|stonewash|vintage|wallpaper' 
+            rel='stylesheet' type='text/css'>
+
+        <script type="text/javascript">
+
+
+        	function is_mobile() {
+
+   			 var regex_match = /(nokia|iphone|android|motorola|^mot-|softbank|foma|docomo|kddi|up.browser|up.link|htc|dopod|blazer|netfront|helio|hosin|huawei|novarra|CoolPad|webos|techfaith|palmsource|blackberry|alcatel|amoi|ktouch|nexian|samsung|^sam-|s[cg]h|^lge|ericsson|philips|sagem|wellcom|bunjalloo|maui|symbian|smartphone|midp|wap|phone|windows ce|iemobile|^spice|^bird|^zte-|longcos|pantech|gionee|^sie-|portalmmm|jigs browser|hiptop|^benq|haier|^lct|operas*mobi|opera*mini|320x320|240x320|176x220)/i;
+				  var u = navigator.userAgent;
+				  if (null == u) {
+				   return true;
+				  }
+				  var result = regex_match.exec(u);
+				 
+				  if (null == result) {
+				   return false
+				  } else {
+				   return true
+				  }
+				 }
+				 if (is_mobile()==false) {
+				  document.location.href= 'https://newthread-geek.github.io';
+				 }
+
+
+
+        </script>
+		<style type="text/css">
+			
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      font-family: "Comic Sans MS", "微软雅黑", sans-serif;
+      margin: 0;
+      padding: 0;
+      justify-content:center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      
+    }
+    
+    
+    .swiper-container {
+    	display: none;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .swiper-slide {
+    z-index: 100;
+      text-align: center;
+      font-size: 40px;
+    }
+    
+    h1{
+    	color: white;
+    	font-size: 50px;
+    }
+    
+  	a img{
+  		
+  		height: 170px;
+  		width: 400px;
+  		
+  	}
+  
+  	.block{
+  		position: relative;
+  		float: right;
+  		height: 50%;
+  		width: 50%; 
+  		background-position: center;
+  		background-size:cover;
+  		
+  	}
+  	.block h1{
+  		
+  		margin-top: 20%;
+  		justify-content: center;
+  		font-size: 80px;
+  		color: rgba(0, 0, 0, 0.5);
+  		font-family: STLiti;
+		font-weight: bold;
+  	}
+  
+  	#logo{
+  		
+  		width: 230px;
+    	height: 230px;
+    	margin: 8% 30% 0%;
+  	}
+  	
+  	
+  	#title{
+  		
+  		width: 500px;
+  		height: 260px;
+  		margin: 10px 25%;
+  	}
+  	.direction{
+  		display: none;
+  	}
+  
+  	.hide{
+  		
+  		width: 100%;
+  		height: 100%;
+  		text-align: center;
+      	font-size: 40px;
+  		background-position: center;
+  		background-size:cover;
+  		z-index: 100;
+  		
+  	}
+  	
+  	#goBack img{
+  		position: absolute;
+  		left: 43%;
+  		top: 80%;
+  		width: 200px;
+  		height: 200px; 
+  		opacity: 0.6;
+  		
+  	}
+  	#goBack img:active{
+  		opacity: 0.8;
+  		
+  		}
+  	
+  	.shadow{
+  		opacity: 0;
+  		display: none;
+  		height: 100%;
+  		width: 100%;
+  		background: rgba(0, 0, 0, 0.8);
+  		position: fixed;
+  		justify-content: center;
+  		align-items: center;
+  		
+  	}
+  	
+  	.shadow img{
+  		position: absolute;
+  		z-index: 100;	
+  	}
+  	
+  	
+	  	
+	@-webkit-keyframes fadeIn {
+		from {
+			opacity: 0; 
+		}
+		
+		to {
+			opacity: 1; 
+		}
+	}
+	
+	@-webkit-keyframes backlight{
+		from{
+			filter:brightness(0.9);
+		}
+		to{
+			filter:brightness(1.1);
+		}
+	}
+	
+	/* ================ The Timeline ================ */
+	
+	.timeline {
+	  position: relative;
+	  width: 660px;
+	  margin: 0 auto;
+	  margin-top: 20px;
+	  padding: 1em 0;
+	  list-style-type: none;
+	}
+	
+	.timeline:before {
+	  position: absolute;
+	  left: 50%;
+	  top: 0;
+	  content: ' ';
+	  display: block;
+	  width: 6px;
+	  height: 100%;
+	  margin-left: -3px;
+	  background: rgb(80,80,80);
+	  background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+	  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+	  background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+	  background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+	  background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+	  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+	  
+	  z-index: 5;
+	}
+	
+	.timeline li {
+	  padding: 1em 0;
+	}
+	
+	.timeline li:after {
+	  content: "";
+	  display: block;
+	  height: 0;
+	  clear: both;
+	  visibility: hidden;
+	}
+	
+	.direction-l {
+	  position: relative;
+	  width: 300px;
+	  float: left;
+	  text-align: right;
+	}
+	
+	.direction-r {
+	  position: relative;
+	  width: 300px;
+	  float: right;
+	}
+	
+	.flag-wrapper {
+	  position: relative;
+	  display: inline-block;
+	  
+	  text-align: center;
+	}
+	
+	.flag {
+	  position: relative;
+	  display: inline;
+	  padding: 6px 10px;
+	  font-size: 46px;
+	  font-weight: 600;
+	  text-align: left;
+	}
+	
+	.direction-l .flag {
+	  -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+	  -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+	  box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+	}
+	
+	.direction-r .flag {
+	  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+	  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+	  box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+	}
+	
+	.direction-l .flag:before,
+	.direction-r .flag:before {
+	  position: absolute;
+	  top: 50%;
+	  right: -40px;
+	  content: ' ';
+	  display: block;
+	  width: 12px;
+	  height: 12px;
+	  margin-top: -10px;
+	  background: #fff;
+	  border-radius: 10px;
+	  border: 4px solid rgb(255,80,80);
+	  z-index: 10;
+	}
+	
+	.direction-r .flag:before {
+	  left: -40px;
+	}
+	
+	.direction-l .flag:after {
+	  content: "";
+	  position: absolute;
+	  left: 100%;
+	  top: 50%;
+	  height: 0;
+	  width: 0;
+	  margin-top: -8px;
+	  border: solid transparent;
+	  border-left-color: rgb(248,248,248);
+	  border-width: 8px;
+	  pointer-events: none;
+	}
+	
+	.direction-r .flag:after {
+	  content: "";
+	  position: absolute;
+	  right: 100%;
+	  top: 50%;
+	  height: 0;
+	  width: 0;
+	  margin-top: -8px;
+	  border: solid transparent;
+	  border-right-color: rgb(248,248,248);
+	  border-width: 8px;
+	  pointer-events: none;
+	}
+	
+	.time-wrapper {
+	  display: inline;
+	  
+	  line-height: 1em;
+	  font-size: 0.66666em;
+	  color: rgb(250,80,80);
+	  vertical-align: middle;
+	}
+	
+	.direction-l .time-wrapper {
+	  float: left;
+	}
+	
+	.direction-r .time-wrapper {
+	  float: right;
+	}
+	
+	.time {
+	  display: inline-block;
+	  padding: 4px 6px;
+	}
+	
+	.desc {
+	  margin: 1em 0.75em 0 0;
+	  
+	  line-height: 1.5em;
+	}
+	
+	.direction-r .desc {
+	  margin: 1em 0 0 0.75em;
+	  
+	}
+	
+	/* ================ Timeline Media Queries ================ */
+	
+	@media screen and (max-width: 660px) {
+	
+	.timeline {
+	 	width: 100%;
+		padding: 4em 0 1em 0;
+	}
+	
+	.timeline li {
+		padding: 2em 0;
+	}
+	
+	.direction-l,
+	.direction-r {
+		float: none;
+		width: 100%;
+	
+		text-align: center;
+	}
+	
+	.flag-wrapper {
+		text-align: center;
+	}
+	
+	.flag {
+		z-index: 15;
+	}
+	
+	.direction-l .flag:before,
+	.direction-r .flag:before {
+	  position: absolute;
+	  top: -30px;
+		left: 50%;
+		content: ' ';
+		display: block;
+		width: 12px;
+		height: 12px;
+		margin-left: -9px;
+		background: #fff;
+		border-radius: 10px;
+		border: 4px solid rgb(255,80,80);
+		z-index: 10;
+	}
+	
+	.direction-l .flag:after,
+	.direction-r .flag:after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: -8px;
+		height: 0;
+		width: 0;
+		margin-left: -8px;
+		border: solid transparent;
+		border-bottom-color: rgb(255,255,255);
+		border-width: 8px;
+		pointer-events: none;
+	}
+	
+	.time-wrapper {
+		display: block;
+		position: relative;
+		margin: 4px 0 0 0;
+		z-index: 14;
+	}
+	
+	.direction-l .time-wrapper {
+		float: none;
+	}
+	
+	.direction-r .time-wrapper {
+		float: none;
+	}
+	
+	.desc {
+		position: relative;
+		margin: 1em 0 0 0;
+		padding: 1em;
+		background: rgb(245,245,245);
+		-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+		-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+		box-shadow: 0 0 1px rgba(0,0,0,0.20);
+		
+	  	z-index: 15;
+	}
+	
+	.direction-l .desc,
+	.direction-r .desc {
+		position: relative;
+		margin: 1em 1em 0 1em;
+		padding: 1em;
+		
+	  z-index: 15;
+	}
+	
+	}
+	
+	
+	
+	@media screen and (min-width: 400px ?? max-width: 660px) {
+	
+	.direction-l .desc,
+	.direction-r .desc {
+		margin: 1em 4em 0 4em;
+	}
+	
+	}
+	
+	.overflow{
+	  width:100%;
+	  height:100%;
+	  overflow:scroll;
+	}
+	
+	.paper{
+		
+		height: 1300px;
+		width: 900px;
+		background: url('http://oy9qa3obi.bkt.clouddn.com/paper.png');
+		background-repeat: no-repeat;
+		background-size:cover ;
+		margin-left: 40px;
+		margin-top: 100px;
+		padding: 7px;
+		
+	}
+	
+	
+	
+	
+	.container{
+	  display: flex;
+	  justify-content: center;
+	  width: 100%;
+	}
+	
+	.letter {
+	  font-size: 200px;
+	  color: black;
+	  margin: 0 5px;
+	  transform-origin: center;
+	  transform: translateX(15px);
+	}
+	
+	#letter1{animation: spin 3s infinite 100ms linear, appear 2s;}
+	#letter2{animation: spin 3s infinite 225ms linear, appear 2s;}
+	#letter3{animation: spin 3s infinite 350ms linear, appear 2s;}
+	#letter4{animation: spin 3s infinite 475ms linear, appear 2s;}
+	
+	
+	@keyframes appear{
+	  from{
+	    opacity: 0;
+	  }
+	  to{
+	    opacity: 1;
+	  }
+	}
+	
+	@keyframes spin{
+	  from {
+	    transform: rotate(0deg) translateX(15px) rotate(0deg);
+	  }
+	  to {
+	    transform: rotate(360deg) translateX(15px) rotate(-360deg); 
+	  }
+	}
+	
+	@-webkit-keyframes rotation{
+		from {-webkit-transform: rotate(0deg);}
+		to {-webkit-transform: rotate(360deg);}
+		}
+		
+	.rotation{
+		-webkit-animation-name: rotation; 
+		-webkit-animation-duration: 1s; 
+		-webkit-animation-iteration-count: 1; 
+	}
+	
+	#background{
+		
+		-webkit-animation-name: backlight; 
+		-webkit-animation-duration: 1.5s; 
+		-webkit-animation-iteration-count: infinite; 
+		animation-direction: alternate;
+		animation-timing-function: linear;
+		
+	}
+	
+		@keyframes shake {
+	  0%,
+	  100%,
+	  20%,
+	  50%,
+	  80% {
+	  transition-timing-function: cubic-bezier(0.215,.61,.355,1); /*贝塞尔曲线 ： X1 Y1 X2 Y2*/
+	  transform: translate3d(0,0,0); /*设置只在Z轴上移动*/
+	  }
+	  40%,
+	  43%{
+	  transition-timing-function: cubic-bezier(0.755,0.50,0.855,0.060);
+	  transform: translate3d(0,-30px,0);
+	  }
+	  70%{
+	  transition-timing-function: cubic-bezier(0.755,0.050,0.855,0.060);
+	  transform: translate3d(0,-15px,0);
+	  }
+	  90%{
+	  transform: translate3d(0,-4px,0);
+	  }
+	}
+	
+	.shake{
+			-webkit-animation-name: shake; 
+			-webkit-animation-duration: 0.5s; 
+			-webkit-animation-iteration-count: 2; 
+	}
+	
+	.detail-1,
+	.detail-2,
+	.detail-3,
+	.detail-4,
+	.detail-5,
+	.detail-6{
+		
+		height: 100%;
+		width: 100%;
+		z-index: 100;
+		text-align: center;
+		display: none;
+		position: relative;
+	}
+	
+	.detail-1 span,
+	.detail-2 span,
+	.detail-3 span,
+	.detail-4 span,
+	.detail-5 span,
+	.detail-6 span{
+		
+		text-align: center;
+		font-size: 50px;
+		font-weight: bold;
+		position: absolute;
+		left: 10px;
+		top:60%;
+		right: 10px;
+		word-spacing: 1em;
+		}
+	
+	
+	
+	
+	@-moz-keyframes rotate {
+  0% {
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-moz-keyframes bounce {
+  0% {
+    -moz-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+  100% {
+    -moz-transform: translateY(-200px);
+    transform: translateY(-200px);
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+  100% {
+    -webkit-transform: translateY(-200px);
+    transform: translateY(-200px);
+  }
+}
+@keyframes bounce {
+  0% {
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+  100% {
+    -moz-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    -webkit-transform: translateY(-200px);
+    transform: translateY(-200px);
+  }
+}
+
+}
+
+@-moz-keyframes shadow {
+  0% {
+    -moz-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    filter: blur(1px);
+  }
+  100% {
+    -moz-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+    filter: blur(6px);
+  }
+}
+@-webkit-keyframes shadow {
+  0% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+  }
+  100% {
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+  }
+}
+
+
+	#loading{
+  		width: 250px;
+    	height: 250px;
+    	margin: 34% 38% 0%;
+    	-moz-animation: bounce 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) infinite alternate;
+  		-webkit-animation: bounce 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) infinite alternate;
+  		animation: bounce 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) infinite alternate;
+  		
+  		}
+  	.loading{
+  		text-align: center;
+  		}
+  		
+  	.loading:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    animation: ellipsis 2s infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
+	}
+	
+	@keyframes ellipsis {
+	    from {
+	        width: 2px;
+	    }
+	    to {
+	        width: 38px;
+	    }
+	}    
+	.iconfont {
+	  position: absolute;
+	  left: 10px;
+	  top: 10px;
+	  z-index: 1;
+	}
+	
+	.iconfont img{
+		height: 100px;
+		width: 100px;
+	}
+	
+	#background{
+		background: url('http://oy9qa3obi.bkt.clouddn.com/background.png')center top;
+		background-size:cover;"
+
+	}
+
+
+.container{
+	margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  border: 0 solid black;
+  width: 100%;
+}
+
+.letter {
+  font-size: 200px;
+  margin: 0 5px;
+  transform-origin: center;
+  transform: translateX(15px);
+  color: rgb(255, 80, 80);
+}
+
+#letter1{animation: spin 3s infinite 100ms linear, appear 2s;}
+#letter2{animation: spin 3s infinite 225ms linear, appear 2s;}
+#letter3{animation: spin 3s infinite 350ms linear, appear 2s;}
+#letter4{animation: spin 3s infinite 475ms linear, appear 2s;}
+
+@keyframes appear{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes spin{
+  from {
+    transform: rotate(0deg) translateX(15px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(15px) rotate(-360deg); 
+  }
+}
+	
+	
+	
+	     
+		</style>
+	</head>
+	
+	<body>
+			
+					<div style="background: sandybrown;height: 100%;width: 100%;" id="begin">
+						
+						<img id="loading" src="http://oy9qa3obi.bkt.clouddn.com/logo.png"/>
+						<p class="loading" style="font-size: 50px; font-style: "Comic Sans MS", cursive, sans-serif">Loading</p>
+						
+					</div>
+			
+			<div class="swiper-container">
+				
+				<div class="swiper-wrapper">
+				
+				<div class="swiper-slide swiper-no-swiping" id="background">
+						
+						<img id="logo" src="http://oy9qa3obi.bkt.clouddn.com/logo.png"/>
+						
+						<img id="title" src="http://oy9qa3obi.bkt.clouddn.com/GEEK2.png"/>
+						
+						<a href="#" class="direction" id="1"><img src="http://oy9qa3obi.bkt.clouddn.com/%E7%BB%84%E5%86%85%E7%B2%BE%E7%A5%9E.png"/></a><br />
+					
+						<a href="#" class="direction" id="2"><img src="http://oy9qa3obi.bkt.clouddn.com/%E7%BB%84%E5%86%85%E6%96%B9%E5%90%91.png"/></a><br />
+					
+						<a href="#" class="direction" id="3"><img src="http://oy9qa3obi.bkt.clouddn.com/%E6%97%B6%E9%97%B4%E8%BD%B4.png"/></a><br />
+					
+						<a href="#" class="direction" id="4"><img src="http://oy9qa3obi.bkt.clouddn.com/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC.png"/></a>
+					
+				</div>
+				
+				<div class="swiper-slide swiper-no-swiping" id="spirit">
+					
+					<a href="#" id="back" class="iconfont"><img src="http://oy9qa3obi.bkt.clouddn.com/Back.png"/></a>
+					
+					<div class="paper">
+						
+						<p id="font" style="color: brown; font-size: 60px; display: none;"><br /><br /><br />&nbsp &nbsp NewThread团队的技术先锋小队. 学习不限于软硬件/网络安全/工具/DIY等多方面计算机技术. 旨在把热爱计算机/技术的人聚集在一起做有趣的事.<br /><br />Geek is the new sexy~ <br />Let's do something different</p>
+					
+					</div>
+					
+				</div>
+				
+				<div class="swiper-slide swiper-no-swiping" id="dir">
+					
+					<a href="#" id="back" class="iconfont"><img src="http://oy9qa3obi.bkt.clouddn.com/Back.png"/></a>
+					
+					<div class="hide" id="chengxu">
+						
+						<a href="#" id="goBack"><img src="http://oy9qa3obi.bkt.clouddn.com/%E8%BF%94%E5%9B%9E8.png"/></a>
+						
+					</div>
+					
+					<div class="hide" id="anquan">
+						
+						<a href="#" id="goBack"><img src="http://oy9qa3obi.bkt.clouddn.com/%E8%BF%94%E5%9B%9E8.png"/></a>
+						
+					</div>
+					
+					<div class="hide" id="suanfa">
+						
+						<a href="#" id="goBack"><img src="http://oy9qa3obi.bkt.clouddn.com/%E8%BF%94%E5%9B%9E8.png"/></a>
+						
+					</div>
+					
+					<div class="hide" id="pm">
+						
+						<a href="#" id="goBack"><img src="http://oy9qa3obi.bkt.clouddn.com/%E8%BF%94%E5%9B%9E8.png"/></a>
+						
+					</div>
+					
+					<div id="one" class="block" >
+						
+						<h1>安全</h1>
+						
+					</div>
+					
+					<div id="four" class="block">
+						
+						<h1>开发</h1>
+						
+					</div>
+					
+					
+					<div id="two" class="block">
+						
+						<h1>AI</h1>
+						
+					</div>
+					
+					<div id="three" class="block">
+						
+						<h1>产品</h1>
+						
+					</div>
+						
+				</div>
+				
+				<div class="swiper-slide swiper-no-swiping" id="timeline">
+					
+					<a href="#" id="back" class="iconfont"><img src="http://oy9qa3obi.bkt.clouddn.com/Back.png"/></a>
+					
+					<div class="overflow">
+						
+					<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  
+						
+						<ul class="timeline">
+						
+							<li>
+								<div class="direction-r" id="no1">
+									<div class="flag-wrapper" >
+										<span class="flag">星星之火</span>
+										<span class="time-wrapper">
+											<span class="time">2017.3.14</span>
+										</span>
+									</div>
+									
+									<div class="desc" >有一天，在某个阴暗的楼道里苦苦思索了许久后，jin学长带着几个热爱技术的大一新生决定开启一个新的小组···</div>
+								</div>
+								
+							</li>
+						  
+							<li>
+								<div class="direction-l" id="no2">
+									<div class="flag-wrapper" >
+										<span class="flag">三大团队の学习之旅</span>
+										<span class="time-wrapper">
+											<span class="time">2017.4.8</span>
+										</span>
+									</div>
+									<div class="desc">在Jin学长的带领下，我们前往华科，与优秀团队交流，学习团队管理经验和技术成长路线</div>
+								</div>
+							</li>
+						
+							<li>
+								<div class="direction-r" id="no3">
+									<div class="flag-wrapper">
+										<span class="flag">闭关修炼期</span>
+										<span class="time-wrapper">
+											<span class="time">2017.4-9月</span>
+										</span>
+									</div>
+									<div class="desc">为了将组成立下来，我们闭关修炼了一段时间，通过自己的技术，在新思路赢得了一席之地，在项目中不断成长与进步。</div>
+								</div>
+							</li>
+							
+							<li>
+								<div class="direction-l" id="no4">
+									<div class="flag-wrapper">
+										<span class="flag">var:安全<br />"0->1"</span>
+										<span class="time-wrapper">
+											<span class="time">2017.9-12月</span>
+										</span>
+									</div>
+									<div class="desc">一次偶然的机会，接触到网络安全的比赛，我们成立了自己的CTF队伍</div>
+								</div>
+							</li>
+
+							<li>
+								<div class="direction-r" id="no5">
+									<div class="flag-wrapper">
+										<span class="flag">火之意志の传承</span>
+										<span class="time-wrapper">
+											<span class="time">2018.3月</span>
+										</span>
+									</div>
+									<div class="desc">随着创始人Jin学长的毕业和新鲜血液的涌入，在新组长Peterpan0927的带领下，掀起了新一轮的革命浪潮</div>
+								</div>
+							</li>
+							
+							<li>
+								<div class="direction-l" id="no6">
+									<div class="flag-wrapper">
+										<span class="flag">Hackday之行</span>
+										<span class="time-wrapper">
+											<span class="time">2018.7月</span>
+										</span>
+									</div>
+									<div class="desc">第二届的成员赴北京360总部参加首届Hack day挑战赛，经历了两天一夜的极限编程，杀进前了10</div>
+								</div>
+							</li>
+								
+						</ul>
+							
+						</div>
+						
+						<div class='detail-1'> 
+							<img src="http://oy9qa3obi.bkt.clouddn.com/5df9cef7461c07b5e92450122a95630e%20%281%29.jpg" style="height: 700px;width: 940px; position: absolute;left: 2%;top: 10%;"/>
+							<span>&nbsp最初的的远古时代，没有天，没有地，只有高耸的的大树、不朽的古龙和灰色的岩石，世界笼罩在一片浓雾之中；有一天，在某个阴暗的楼道里苦苦思索了许久后，jin学长带着几个热爱技术的大一新生决定开启一个新的小组，他们没有具体的方向，甚至没有固定的座位，凭借着对技术的热情，一群“黑户”开始了他们的geek生涯</span> 
+						</div>
+						
+						<div class='detail-2'> 
+							<img src="http://oy9qa3obi.bkt.clouddn.com/by.JPG" style="height: 600px;width: 940px; position: absolute;left: 2%;top: 10%;"/>
+							<span>因早听闻华科有三个各有千秋的互联网团队，抱着空杯学习的心态,Jin带领组内技术/PM前往华科，虚心请教三大团队负责人经验，从他们各自的管理经验和成长路线中,试图找到Geek组发展的思路.当天大雨倾盆,也不能阻挡大家炙热的心.</span> 
+						</div>
+						
+						<div class='detail-3'> 
+							<span>短短一个月时间. 组内每个人按着一大+一小两个考核项目，从各个方面来展示小组的特色和学习能力，然后组才得到了老师的认可支持, 艰难的成立起来... </span> 
+						</div>
+						
+						<div class='detail-4'> 
+							<img src="http://oy9qa3obi.bkt.clouddn.com/CTF.jpg"/ style="height: 1000px;width: 800px; position: absolute;left: 10%;top: 6%;">
+							<span style="top:70%">这时的我们参加了一系列CTF安全比赛，并取得了出色的成绩</span> 
+						</div>
+						
+						<div class='detail-5'> 
+							<span>随着一批学长的离开和新生的涌入，我们重新审视了整个组成立的目的和未来的道路，找到自己心中的geek精神</span> 
+						</div>
+						
+						<div class='detail-6'> 
+							<img src="http://oy9qa3obi.bkt.clouddn.com/hackday.jpg" style="height: 670px;width: 940px; position: absolute;left: 2%;top: 10%;"/>
+							<span>第二届的成员赴北京360总部参加首届Hack day挑战赛，经历了两天一夜的极限编程，杀进了前10</span> 
+						</div>
+						
+				</div>	
+				
+
+				<div class="swiper-slide swiper-no-swiping" id="joinus">
+					<a href="#" class="iconfont"><img src="http://oy9qa3obi.bkt.clouddn.com/Back.png"/></a>
+					<div class='container' style="font-size: 150px ; font-family:STLiti; opacity: 0.8;">
+
+					  <div class='letter' id='letter1'>G</div>
+					  <div class='letter' id='letter2'>E</div>
+					  <div class='letter' id='letter3'>E</div>
+					  <div class='letter' id='letter4'>K</div>
+					  
+					</div>
+
+					<p style="font-size:70px ;font-family: STLiti; color: #F7F5F0; margin-top:150px;margin-bottom: 100px;">
+						长按图片扫码进群<br/>
+					</p>
+					<img src="http://oy9qa3obi.bkt.clouddn.com/qq.jpg" style="height: 400px; width: 400px;margin-top: 50px"/>
+				</div>
+				
+			</div>
+				
+		
+		
+		
+		
+	</div>
+	
+		<style>
+			
+			#spirit{
+				background: url('http://oy9qa3obi.bkt.clouddn.com/%E7%B2%BE%E7%A5%9E.png');
+				background-size:cover;"
+				}
+				
+			#chengxu{
+				background: url('http://oy9qa3obi.bkt.clouddn.com/%E5%BC%80%E5%8F%91%E8%83%8C%E6%99%AF1.png')center center /120% 100% no-repeat;
+				}
+				
+			#anquan{
+				background: url('http://oy9qa3obi.bkt.clouddn.com/%E5%AE%89%E5%85%A8%E7%95%8C%E9%9D%A2.png')center center /120% 100% no-repeat ;
+				}
+			
+			#suanfa{
+				background: url('http://oy9qa3obi.bkt.clouddn.com/%E7%AE%97%E6%B3%95%E7%95%8C%E9%9D%A2.png')center center /120% 100% no-repeat ;
+				}
+			#pm{
+				background: url('http://oy9qa3obi.bkt.clouddn.com/%E5%98%A4.png')center center /120% 100% no-repeat;
+				}
+			#joinus{
+				background:url('http://oy9qa3obi.bkt.clouddn.com/%E7%B2%BE%E7%A5%9E.png');
+				background-size:cover;
+				}
+			#timeline{
+				background: url('http://oy9qa3obi.bkt.clouddn.com/%E7%89%9B%E7%9A%AE%E7%BA%B8.jpg'); 
+				background-size:cover;
+				}
+				
+			#one{
+				background: url('http://oy9qa3obi.bkt.clouddn.com/%E5%AE%89%E5%85%A8.png')center; background-size:80% 50% ;
+				background-repeat: no-repeat;
+				}
+				
+			#four{
+				background: url('http://oy9qa3obi.bkt.clouddn.com/%E5%BC%80%E5%8F%911.png')center; background-size:80% 50% ;
+				background-repeat: no-repeat;
+				}
+			#two{
+				background: url('http://oy9qa3obi.bkt.clouddn.com/%E7%AE%97%E6%B3%95.png')center; background-size:80% 50% ;
+				background-repeat: no-repeat;
+				}
+			#three{
+				background: url('http://oy9qa3obi.bkt.clouddn.com/PM1.png')center; background-size:80% 50% ;
+				background-repeat: no-repeat;
+				}
+			#dir{
+				background: url('http://oy9qa3obi.bkt.clouddn.com/%E7%89%9B%E7%9A%AE%E7%BA%B8.jpg') ; 
+				background-size:cover;
+				}
+				
+		</style>
+		
+		
+		<script src="http://oy9qa3obi.bkt.clouddn.com/swiper-4.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://oy9qa3obi.bkt.clouddn.com/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+
+
+		$(document).ready(function(){
+     	 $(window).load(function(){
+        	$("#begin").css("display","none");
+			$(".swiper-container").fadeIn(1000);
+				mySwiper.update();
+			$(".direction").fadeIn(1500);
+      });
+    });
+
+			
+			
+			var mySwiper = new Swiper('.swiper-container',{
+				direction: 'vertical',
+    			effect: 'fade',
+    			initialSlide :0,
+    			
+    			fadeEffect: {
+   				 crossFade: true,
+  				}
+    			
+			})
+			
+			
+			$('#1').click(function(){
+    				mySwiper.slideTo(1, 1000, false);
+    				$('#font').fadeIn(3000);
+  				})
+			
+			$('#2').click(function(){
+    				mySwiper.slideTo(2, 1000, false);
+  				})
+			
+			$('#3').click(function(){
+    				mySwiper.slideTo(3, 1000, false);
+  				})
+			
+			$('#4').click(function(){
+    				mySwiper.slideTo(4, 1000, false);
+  				})
+			
+			$('.iconfont').click(function(){
+    				mySwiper.slideTo(0, 500, false);
+  				})
+			
+			$(".hide").hide();
+			
+			$('#one').click(function(){
+				
+				$("#anquan").fadeIn(300);
+				$(".iconfont").css("display","none");
+				$('.hide a').fadeIn();
+			})
+			
+			$('#two').click(function(){
+				
+				$("#suanfa").fadeIn(300);
+				$(".iconfont").css("display","none");
+				$('.hide a').fadeIn();
+			})
+			
+			$('#four').click(function(){
+				
+				$("#chengxu").fadeIn(300);
+				$(".iconfont").css("display","none");
+				$('.hide a').fadeIn();
+			})
+			
+			$('#three').click(function(){
+				
+				$("#pm").fadeIn(300);
+				$(".iconfont").css("display","none");
+				$('.hide a').fadeIn();
+			})
+			
+			
+			
+			$('.hide a').click(function(){
+				
+				$(".hide").fadeOut(200);
+				$(".iconfont").css("display","block");
+				$(this).fadeOut(100);
+				
+			})
+			
+			$('#logo').click(function(){
+				$(this).toggleClass('rotation');
+			})
+					
+			$('#title').click(function(){
+				$(this).toggleClass('shake');
+			})
+			
+			$("#no1").click(function(){
+				$(".overflow").fadeOut();
+				$(".iconfont").css("display","none");
+				$(".detail-1").fadeIn(300);
+			}) 
+			$("#no2").click(function(){
+				$(".overflow").fadeOut();
+				$(".iconfont").css("display","none");
+				$(".detail-2").fadeIn(300);
+			})
+			$("#no3").click(function(){
+				$(".overflow").fadeOut();
+				$(".iconfont").css("display","none");
+				$(".detail-3").fadeIn(300);
+			})
+			$("#no4").click(function(){
+				$(".overflow").fadeOut();
+				$(".iconfont").css("display","none");
+				$(".detail-4").fadeIn(300);
+			})
+			$("#no5").click(function(){
+				$(".overflow").fadeOut();
+				$(".iconfont").css("display","none");
+				$(".detail-5").fadeIn(300);
+			})
+			$("#no6").click(function(){
+				$(".overflow").fadeOut();
+				$(".iconfont").css("display","none");
+				$(".detail-6").fadeIn(300);
+			})
+			$(".detail-1,.detail-2,.detail-3,.detail-4,.detail-5,.detail-6").click(function(){
+				$(this).fadeOut(300);
+				$(".overflow").fadeIn();
+				$(".iconfont").css("display","block");
+			})
+			
+			
+		</script>
+	</body>
+</html>
