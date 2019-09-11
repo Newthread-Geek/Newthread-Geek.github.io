@@ -43,8 +43,7 @@ html,body {
 }
 
 #smohan-v4-container section .grid-auto-wrapper {
-	width: 73%;
-
+	width: 1200px;
 	margin: 0 auto;
 	height: 100%;
 	position: relative
