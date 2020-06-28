@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box
+}
+
+.window,.window2,.window3,.window4 {
+    width: 526px;
+    height: 326px;
+    background-color: rgba(37,37,37,0.85);
+    border: 1px solid #c9c9c9;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s
+}
+
+.window.window--maximized,.window2.window--maximized,.window3.window--maximized,.window4.window--maximized {
+    height: 500px;
+    width: 700px
+}
+
+.window.window--minimized,.window2.window--minimized,.window3.window--minimized,.window4.window--minimized {
+    height: 25px;
+    width: 180px
+}
+
+.window.window--minimized .window-content,.window4.window--minimized .window-content,.window2.window--minimized .window-content,.window3.window--minimized .window-content {
+    display: none
+}
+
+.window--destroyed {
+display: none;
+}
+
+.window-header {
+    background-color: #eee;
+    height: 25px
+}
+
+.window-controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.window-controls .control-item {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: #333;
+    -webkit-transition: all ease-in .15s;
+    transition: all ease-in .15s;
+    cursor: pointer
+}
+
+.window-controls .control-item:hover {
+    background-color: #ccc
+}
+
+.control-item.control-close {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px
+}
+
+.control-item.control-close:hover {
+    background-color: #ec6060;
+    color: #fff
+}
+
+.control-item.control-maximize {
+    line-height: 19px
+}
+
+.control-item.control-minimize {
+    line-height: 22px
+}
+
+.window-cursor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 5px
+}
+
+.window-cursor .i-cursor-indicator {
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Consolas',monospace;
+    margin: 0 2px 0 5px
+}
+
+.window-cursor .i-cursor-underscore {
+    width: 10px;
+    height: 3px;
+    background-color: #fff;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-right: 5px;
+    -webkit-animation: blink 1s steps(2,start) infinite;
+    animation: blink 1s steps(2,start) infinite
+}
+
+.window-input {
+    background-color: inherit;
+    border: 0;
+    outline: 0;
+    color: transparent;
+    text-shadow: 0 0 0 #fff;
+    font-family: 'Consolas',monospace;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.window-input:focus {
+    outline: 0
+}
+
+.i-prompt {
+    width: 62px;
+    height: 62px;
+    background: url("https://cdn4.iconfinder.com/data/icons/small-n-flat/24/terminal-48.png") no-repeat center;
+    background-color: rgba(0,0,0,0.35);
+    border-radius: 10px;
+    box-shadow: 0 3px 1px rgba(0,0,0,0.25);
+    cursor: pointer;
+    -webkit-transition: all ease-in-out .15s;
+    transition: all ease-in-out .15s
+}
+
+.i-prompt:hover {
+    background-position: center 4px
+}
+
+.i-prompt.hidden {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+@-webkit-keyframes blink {
+    to {
+        visibility: hidden
+    }
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden
+    }
+}
+
+#one {
+    color: white
+}
+
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1
+}
+
+#large-header {
+    background-image: url(http://web.weweztms.cn/geek004.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 107%;
+    -moz-background-size: 100% 107%
+}
+
+.main-title {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #f9f1e9;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0)
+}
+
+.demo-1 .main-title {
+    text-transform: uppercase;
+    font-size: 4.2em;
+    letter-spacing: .1em
+}
+
+.main-title .thin {
+    font-weight: 200
+}
+
+@media only screen and (max-width: 768px) {
+    .demo-1 .main-title {
+        font-size:3em
+    }
+}

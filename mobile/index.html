@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hi，萌新</title>
+    <link rel="icon" href="image/geeklogo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="image/geeklogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/Swiper/4.5.1/css/swiper.min.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="ajax方式">
+    <script type="text/javascript">
+
+     function is_mobile() {
+
+          var regex_match = /(nokia|iphone|android|motorola|^mot-|softbank|foma|docomo|kddi|up.browser|up.link|htc|dopod|blazer|netfront|helio|hosin|huawei|novarra|CoolPad|webos|techfaith|palmsource|blackberry|alcatel|amoi|ktouch|nexian|samsung|^sam-|s[cg]h|^lge|ericsson|philips|sagem|wellcom|bunjalloo|maui|symbian|smartphone|midp|wap|phone|windows ce|iemobile|^spice|^bird|^zte-|longcos|pantech|gionee|^sie-|portalmmm|jigs browser|hiptop|^benq|haier|^lct|operas*mobi|opera*mini|320x320|240x320|176x220)/i;
+           var u = navigator.userAgent;
+           if (null == u) {
+            return true;
+           }
+           var result = regex_match.exec(u);
+         
+           if (null == result) {
+            return false
+          } else {
+            return true
+           }
+          }
+          if (is_mobile()==false) {
+            alert('将跳转到web端');
+           document.location.href= 'https://newthread-geek.github.io';
+          }
+
+
+
+        </script>
+
+
+    <style type="text/css">
+
+      html,
+      body {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        font-family: "Comic Sans MS", "微软雅黑", sans-serif;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+
+      }
+    .element::-webkit-scrollbar { width: 0 !important }
+    .element { -ms-overflow-style: none; }
+     .element { overflow: -moz-scrollbars-none; }
+
+      /*--------------------addforsign--------------------*/
+      .signup_main {
+        display: inline-block;
+        width: 100%;
+        height: 40%;
+        top: 20%;
+        position: relative;
+        vertical-align: middle;
+      }
+
+
+
+      input {
+        height: 3%;
+        width: 65%;
+        font-size: 1.6cm;
+        background-image: url('image/R.png');
+        border-radius: 16px;
+        color: #FFE4B5;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+
+        -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+
+        -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px
+      }
+
+      #top1 {
+        width: 33%;
+        height: 12%;
+        top: 5%;
+        left: 33%;
+        background-image: url('image/geek.png');
+        position: fixed;
+
+      }
+
+      #inputsubmit {
+        border: 1px solid #85afe1;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.075), 0px 0px 8px rgba(102, 175, 233, 0.6);
+      }
+
+      textarea {
+        width: 62%;
+        ;
+        height: 40%;
+        color: #FFE4B5;
+        background-color: #926B3F;
+        border-radius: 16px;
+        font-size: 1.0cm;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+
+        -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+
+        -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px
+      }
+
+      #tobottom {
+        width: 100%;
+        height: 480%;
+        top: 171%;
+        position: absolute;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #FFE4B5;
+        font-family: "微软雅黑";
+        font-size: 1.3cm;
+      }
+
+      input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #FFE4B5;
+        font-family: "微软雅黑";
+        font-size: 1.3cm;
+      }
+
+      input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #FFE4B5;
+        font-family: "微软雅黑";
+        font-size: 1.3cm;
+      }
+
+      input:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #FFE4B5;
+        font-family: "微软雅黑";
+        font-size: 1.3cm;
+
+
+
+      }
+
+      /*-----------------addforsign----------------------*/
+
+      .swiper-container {
+        display: none;
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        z-index: 100;
+        text-align: center;
+        font-size: 40px;
+      }
+
+      h1 {
+        color: white;
+        font-size: 50px;
+
+      }
+
+      a img {
+
+        height: 8vh;
+        width: 42vw;
+        margin-bottom: 7px;
+
+      }
+
+      .block {
+        position: relative;
+        float: right;
+        height: 50%;
+        width: 50%;
+        text-align: center;
+        
+
+      }
+
+      .block h1 {
+
+        margin-top: 37.5vh;
+        justify-content: center;
+        font-size: 80px;
+        color: rgba(0, 0, 0, 0.5);
+        font-family: STLiti;
+        font-weight: bold;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+      }
+
+      .block h2 {
+
+        margin-top: 37.5vh;
+        justify-content: center;
+        font-size: 80px;
+        color: rgba(0, 0, 0, 0.5);
+        font-family: STLiti;
+        font-weight: bold;
+        width: 100%;
+        position: absolute;
+      text-align: center;
+      }
+
+
+      #logo {
+
+        width: 230px;
+        height: 300px;
+        margin: 8% 30% 0%;
+      }
+
+
+      #title {
+
+        width: 500px;
+        height: 260px;
+        margin: 10px 25%;
+      }
+
+      .direction {
+        display: none;
+        width: 20%;
+        height: 10%;
+        right: 0.2%;
+        position: relative;
+        margin-bottom: 10px;
+      }
+
+      .hide {
+
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 40px;
+        background-position: center;
+        background-size: cover;
+        z-index: 100;
+
+      }
+
+      #goBack img {
+        position: absolute;
+        left: 39.5%;
+        top: 80%;
+        width: 200px;
+        height: 200px;
+        opacity: 0.6;
+
+      }
+
+      #goBack img:active {
+        opacity: 0.8;
+
+      }
+
+      .shadow {
+        opacity: 0;
+        display: none;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .shadow img {
+        position: absolute;
+        z-index: 100;
+      }
+
+
+
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes backlight {
+        from {
+          filter: brightness(0.9);
+        }
+
+        to {
+          filter: brightness(1.1);
+        }
+      }
+
+      /* ================ The Timeline ================ */
+
+      .timelinenew {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .timelinenew:before {
+        content: "";
+        position: absolute;
+        top: -3em;
+        left: 2em;
+        width: 0.25em;
+        height: calc(100% + 6em);
+        background: linear-gradient(to bottom, #151515 0%, #3b3b3b 2%, #3b3b3b 98%, #151515 100%);
+      }
+
+      @media screen and (min-width: 45em) {
+        .timelinenew:before {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      .timelinenew__entry {
+        position: relative;
+        margin-bottom: 4em;
+        color: #fff;
+      }
+
+      .timelinenew__entry:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .timelinenew__id {
+        position: absolute;
+        top: 1em;
+        left: 2em;
+        padding: 0.5em 1em;
+        background: #282727;
+        transform: translateX(-50%);
+      }
+
+      @media screen and (min-width: 45em) {
+        .timelinenew__id {
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: .5cm;
+        }
+      }
+
+      .timelinenew__content {
+        position: relative;
+        display: block;
+        margin-left: 6em;
+        padding: 1em;
+        background: #282727;
+      }
+
+      @media screen and (min-width: 45em) {
+        .timelinenew__content {
+          margin-left: 0;
+          width: calc(50% - 4em);
+        }
+      }
+
+      .timelinenew__content:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 1em;
+        left: -1em;
+        border-top: 1em solid transparent;
+        border-bottom: 1em solid transparent;
+        border-right: 1em solid #282727;
+      }
+
+      @media screen and (min-width: 45em) {
+        .timelinenew__content:before {
+          left: auto;
+          right: -1em;
+          border-left: 1em solid #282727;
+          border-right: none;
+        }
+      }
+
+      @media screen and (min-width: 45em) {
+        .timelinenew__content--flipped {
+          float: right;
+        }
+
+        .timelinenew__content--flipped:before {
+          left: -1em;
+          right: auto;
+          border-left: none;
+          border-right: 1em solid #282727;
+        }
+      }
+
+      .timelinenew__heading {
+        margin-bottom: 0.25em;
+        font-size: 1.2cm;
+      }
+
+      .timelinenew__text {
+        color: #ccc;
+        font-size: 1.1cm;
+      }
+
+      .timelinenew__text:last-child {
+        margin-bottom: 0;
+      }
+
+      * {
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      body {
+        line-height: 1.4;
+        background-color: #151515;
+      }
+
+      .containernew {
+        width: 85%;
+        max-width: 1200px;
+        margin: 4em auto;
+      }
+
+      .section-title {
+        padding-bottom: 2em;
+        text-align: center;
+        color: #dddddd;
+      }
+
+      h2 {
+        font-size: .8cm;
+      }
+
+      p {
+        font-size: 1.1cm;
+      }
+
+      /* ================ The Timeline ================ */
+
+
+      /* ================ Timeline Media Queries ================ */
+
+
+
+      .overflow {
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+      }
+
+      .paper {
+
+        height: 1300px;
+        width: 900px;
+        background: url('http://png.weweztms.cn/%E7%BA%B8.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 40px;
+        margin-top: 100px;
+        padding: 7px;
+
+      }
+
+
+
+
+      .container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .letter {
+        font-size: 200px;
+        color: black;
+        margin: 0 5px;
+        transform-origin: center;
+        transform: translateX(15px);
+      }
+
+      #letter1 {
+        animation: spin 3s infinite 100ms linear, appear 2s;
+      }
+
+      #letter2 {
+        animation: spin 3s infinite 225ms linear, appear 2s;
+      }
+
+      #letter3 {
+        animation: spin 3s infinite 350ms linear, appear 2s;
+      }
+
+      #letter4 {
+        animation: spin 3s infinite 475ms linear, appear 2s;
+      }
+
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg) translateX(15px) rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg) translateX(15px) rotate(-360deg);
+        }
+      }
+
+      @-webkit-keyframes rotation {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      .rotation {
+        -webkit-animation-name: rotation;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-iteration-count: 1;
+      }
+
+      #background {
+
+        -webkit-animation-name: backlight;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+
+      }
+
+      @keyframes shake {
+
+        0%,
+        100%,
+        20%,
+        50%,
+        80% {
+          transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+          /*贝塞尔曲线 ： X1 Y1 X2 Y2*/
+          transform: translate3d(0, 0, 0);
+          /*设置只在Z轴上移动*/
+        }
+
+        40%,
+        43% {
+          transition-timing-function: cubic-bezier(0.755, 0.50, 0.855, 0.060);
+          transform: translate3d(0, -30px, 0);
+        }
+
+        70% {
+          transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+          transform: translate3d(0, -15px, 0);
+        }
+
+        90% {
+          transform: translate3d(0, -4px, 0);
+        }
+      }
+
+      .shake {
+        -webkit-animation-name: shake;
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-iteration-count: 2;
+      }
+
+      .detail-1,
+      .detail-2,
+      .detail-3,
+      .detail-4,
+      .detail-5,
+      .detail-6 {
+
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        text-align: center;
+        display: none;
+        position: relative;
+        color: white;
+        background-color: #2C3E50;
+      }
+
+      .detail-1 span,
+      .detail-2 span,
+      .detail-3 span,
+      .detail-4 span,
+      .detail-5 span,
+      .detail-6 span {
+
+        text-align: center;
+        font-size: 50px;
+        position: absolute;
+        color: #D0D0D0;
+        left: 10px;
+        top: 60%;
+        right: 10px;
+        word-spacing: 1em;
+      }
+
+
+
+
+      @-moz-keyframes rotate {
+        0% {
+          -moz-transform: rotate(0);
+          transform: rotate(0);
+        }
+
+        100% {
+          -moz-transform: rotate(359deg);
+          transform: rotate(359deg);
+        }
+      }
+
+      @-webkit-keyframes rotate {
+        0% {
+          -webkit-transform: rotate(0);
+          transform: rotate(0);
+        }
+
+        100% {
+          -webkit-transform: rotate(359deg);
+          transform: rotate(359deg);
+        }
+      }
+
+      @keyframes rotate {
+        0% {
+          -moz-transform: rotate(0);
+          -ms-transform: rotate(0);
+          -webkit-transform: rotate(0);
+          transform: rotate(0);
+        }
+
+        100% {
+          -moz-transform: rotate(359deg);
+          -ms-transform: rotate(359deg);
+          -webkit-transform: rotate(359deg);
+          transform: rotate(359deg);
+        }
+      }
+
+      @-moz-keyframes bounce {
+        0% {
+          -moz-transform: translateY(15px);
+          transform: translateY(15px);
+        }
+
+        100% {
+          -moz-transform: translateY(-200px);
+          transform: translateY(-200px);
+        }
+      }
+
+      @-webkit-keyframes bounce {
+        0% {
+          -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+        }
+
+        100% {
+          -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+        }
+      }
+
+      @keyframes bounce {
+        0% {
+          -moz-transform: translateY(15px);
+          -ms-transform: translateY(15px);
+          -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+        }
+
+        100% {
+          -moz-transform: translateY(-200px);
+          -ms-transform: translateY(-200px);
+          -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+        }
+      }
+
+      }
+
+      @-moz-keyframes shadow {
+        0% {
+          -moz-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+          filter: blur(1px);
+        }
+
+        100% {
+          -moz-transform: scale(0.8, 0.8);
+          transform: scale(0.8, 0.8);
+          filter: blur(6px);
+        }
+      }
+
+      @-webkit-keyframes shadow {
+        0% {
+          -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+          -webkit-filter: blur(1px);
+          filter: blur(1px);
+        }
+
+        100% {
+          -webkit-transform: scale(0.8, 0.8);
+          transform: scale(0.8, 0.8);
+          -webkit-filter: blur(6px);
+          filter: blur(6px);
+        }
+      }
+
+
+      #loading {
+        width: 250px;
+        height: 250px;
+        margin: 34% 38% 0%;
+        -moz-animation: bounce 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) infinite alternate;
+        -webkit-animation: bounce 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) infinite alternate;
+        animation: bounce 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) infinite alternate;
+      }
+
+      .loading {
+        text-align: center;
+      }
+
+      .loading:after {
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: bottom;
+        animation: ellipsis 2s infinite;
+        content: "\2026";
+        /* ascii code for the ellipsis character */
+      }
+
+      @keyframes ellipsis {
+        from {
+          width: 2px;
+        }
+
+        to {
+          width: 38px;
+        }
+      }
+
+      .iconfont {
+        position: absolute;
+        left: -20px;
+        top: 10px;
+        z-index: 1;
+        width: 162px;
+        height: 145px;
+      }
+
+      .iconfont img {
+        height: 100px;
+        width: 100px;
+      }
+
+      #background {
+        background: url('http://img.nt-geek.club/19-mobile-background.png')center top;
+        background-size: cover;
+      }
+
+
+      .container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        border: 0 solid black;
+        width: 100%;
+      }
+
+      .css181d1613bf1f4c1 {
+        color: #ca2309;
+        font-size: 1.3cm;
+        position: absolute;
+        top: 42%;
+        width: 78%;
+        text-align: center;
+        left: 10.7%;
+        font-weight: bold;
+      }
+
+      .css181ced819c1f4c1 {
+        color: rgb(36, 91, 33);
+        font-size: 1.3cm;
+        position: absolute;
+        top: 44%;
+        width: 78%;
+        text-align: center;
+        left: 10.7%;
+        font-weight: bold;
+      }
+
+      .css181cef7e071f4c1 {
+        color: #e38f1b;
+        font-size: 1.3cm;
+        position: absolute;
+        top: 44%;
+        width: 78%;
+        text-align: center;
+        left: 10.7%;
+        font-weight: bold;
+      }
+
+      .css181cf0b56e1f4c1 {
+        color: #14365a;
+        font-size: 1.3cm;
+        position: absolute;
+        top: 43%;
+        width: 78%;
+        text-align: center;
+        left: 10.7%;
+        font-weight: bold;
+      }
+
+
+      .letter {
+        font-size: 200px;
+        margin: 0 5px;
+        transform-origin: center;
+        transform: translateX(15px);
+        color: rgb(255, 80, 80);
+      }
+
+      #letter1 {
+        animation: spin 3s infinite 100ms linear, appear 2s;
+      }
+
+      #letter2 {
+        animation: spin 3s infinite 225ms linear, appear 2s;
+      }
+
+      #letter3 {
+        animation: spin 3s infinite 350ms linear, appear 2s;
+      }
+
+      #letter4 {
+        animation: spin 3s infinite 475ms linear, appear 2s;
+      }
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg) translateX(15px) rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg) translateX(15px) rotate(-360deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+   <div style="background: sandybrown;height: 100vh;width: 100vw;padding: 0;margin: 0;" id="begin">
+      <img id="loading" src="http://img.nt-geek.club/19-mobile-geek.png" />
+      <p class="loading" style="font-size: 50px; font-style: " Comic Sans MS", cursive, sans-serif">Loading</p>
+    </div>  
+
+    <div class="swiper-container">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide swiper-no-swiping" id="background">
+          <div style="position:absolute;top: 40vh;left: 29vw;">
+          <a href="#" style="-webkit-tap-highlight-color: transparent;" class="direction" id="1"><img src="http://img.nt-geek.club/19-mobile-spirit.png" /></a><br />
+
+          <a href="#" style="-webkit-tap-highlight-color: transparent;" class="direction" id="2"><img src="http://img.nt-geek.club/19-mobile-direction.png" /></a><br />
+
+          <a href="#" style="-webkit-tap-highlight-color: transparent;" class="direction" id="3"><img src="http://img.nt-geek.club/19-mobile-TIMELINE.png" /></a><br />
+
+          <a href="#" style="-webkit-tap-highlight-color: transparent;" class="direction" id="4"><img src="http://img.nt-geek.club/19-mobile-contectus.png" /></a>
+          </div>
+
+
+        </div>
+
+        <div class="swiper-slide swiper-no-swiping" id="spirit">
+
+          <a href="#" id="back" class="iconfont"><img src="http://png.weweztms.cn/Back.png" /></a>
+
+          <div class="paper">
+
+            <p id="font" style="color: brown; font-size: 60px; display: none;"><br /><br /><br />&nbsp &nbsp
+              NewThread团队的技术先锋小队. 学习不限于软硬件/网络安全/工具/DIY等多方面计算机技术. 旨在把热爱计算机/技术的人聚集在一起做有趣的事.<br /><br />Geek is the new sexy~ <br />Let's
+              do something different</p>
+
+          </div>
+
+        </div>
+
+        <div class="swiper-slide swiper-no-swiping" id="dir">
+
+          <a href="#" id="back" class="iconfont"><img src="http://png.weweztms.cn/Back.png" /></a>
+
+          <div class="hide" id="chengxuw" >
+            <img src="image/geeklogo.png" id="chengxu" data-src="http://img.nt-geek.club/19-mobile-K.png">
+            <ul class="css181d1613bf1f4c1">
+              <li>这里有各个方面的攻城狮：前端web网页(微信小程序)，后端服务器，</li>
+              <li>移动端移动端iOS/Android。游走在寂静的黑夜，我们隐匿在编码逻辑中。</li>
+              <li>开发语言不限，一切均可编程，StayHungry，StayFoolish.不断进步，锐意创新。</li>
+            </ul>
+            </ul>
+
+
+            <a href="#" id="goBack"><img src="image/KA.png" /></a>
+
+          </div>
+
+          <div class="hide" id="anquanw">
+            <img src="image/geeklogo.png" id="anquan" data-src="http://img.nt-geek.club/19-mobile-AQ.png">
+            <ul class="css181ced819c1f4c1">
+              <li>主要涉及网络攻防、参加ctf安全赛事，漏洞挖掘等领域，视野宽广。&nbsp;</li>
+              <li>我们需要的不是脚本小子，而是对于底层原理了若指掌、</li>
+              <li>拥有扎实基础知识的Super Hacker，自学能力和心态尤为重要。</li>
+
+            </ul>
+
+
+            <a href="#" id="goBack"><img src="image/AA.png" /></a>
+
+          </div>
+
+          <div class="hide" id="suanfaw">
+            <img src="image/geeklogo.png" id="suanfa" data-src="http://img.nt-geek.club/19-mobile-T.png">
+            <a href="#" id="goBack"><img src="image/TA.png" /></a>
+            <ul class="css181cef7e071f4c1">
+              <li>人工智能站在了风口,机器学习&amp;深度学习是它的分支,</li>
+              <li>它背后的核心就是算法与性能;</li>
+              <li>但科技感十足的背后，是大量的数学知识和计算机知识的支撑。</li>
+              <li>路漫漫其修远兮，非大毅力者不能。</li>
+            </ul>
+          </div>
+
+          <div class="hide" id="pmw"  >
+            <img src="image/geeklogo.png" id="pm" data-src="http://img.nt-geek.club/19-mobile-pm.png">
+            <a href="#" id="goBack"><img src="http://img.nt-geek.club/19-mobile-pmA.png" /></a>
+            <ul class="css181cf0b56e1f4c1">
+              <li>PM是外界跟技术人员沟通最好的桥梁,</li>
+              <li>负责统筹和规划整个组的产品和活动,同时负责产品的UI。</li>
+              <li>和设计,将整个组串联起来,做一个有思想,大局观的设计家。</li>
+              <li>研究用户心理，把控项目进度，当一个有全局观的掌舵者。</li>
+            </ul>
+
+          </div>
+
+
+          <div id="one" class="block" >
+            <img src="image/geeklogo.png" id="aqw" data-src="" class="block" style="width: 80%;height: 50%;top: 25%;right: 10%;">
+
+            <h1>安全</h1>
+
+          </div>
+
+          <div id="four"  class="block">
+            <img src="image/geeklogo.png" id="kfw" data-src="http://image.ldlzds.cn/%E5%BC%80%E5%8F%911.png" class="block" style="width: 80%;height: 50%;top: 25%;right: 10%;">
+
+            <h1>开发</h1>
+
+          </div>
+
+
+          <div id="two" class="block">
+            <img src="image/geeklogo.png" id="tsw" data-src="http://image.ldlzds.cn/%E6%8E%A2%E7%B4%A2%281%29.png" class="block" style="width: 80%;height: 50%;top: 25%;right: 10%;">
+
+            <h2>探索</h2>
+
+          </div>
+
+          <div id="three" class="block">
+            <img src="image/geeklogo.png" id="cpw" data-src="http://image.ldlzds.cn/PM1.png" class="block" style="width: 80%;height: 50%;top: 25%;right: 10%;">
+
+            <h2>产品</h2>
+
+          </div>
+
+
+        </div>
+
+        <div class="swiper-slide swiper-no-swiping" id="timeline">
+
+          <a href="#" id="back" class="iconfont"><img src="http://png.weweztms.cn/Back.png" /></a>
+
+          <div class="overflow">
+
+            <article class="containernew">
+              <h1 style="font-size: 1.7cm" class="section-title">The Timeline Of Geek</h1>
+              <ol class="timelinenew">
+                <li class="timelinenew__entry" id="no1">
+                  <span class="timelinenew__id">2017.3.14</span>
+                  <div class="timelinenew__content">
+                    <h2 class="timelinenew__heading">星星之火</h2>
+                    <p class="timelinenew__text">有一天，在某个阴暗的楼道里苦苦思索了许久后，jin学长带着几个热爱技术的大一新生决定开启一个新的小组···</p>
+                  </div>
+                </li>
+                <li class="timelinenew__entry" id="no2">
+                  <span class="timelinenew__id">2017.4.8</span>
+                  <div class="timelinenew__content timelinenew__content--flipped">
+                    <h2 class="timelinenew__heading">三大团队的学习之旅</h2>
+                    <p class="timelinenew__text">在Jin学长的带领下，我们前往华科，与优秀团队交流，学习团队管理经验和技术成长路线</p>
+                  </div>
+                </li>
+                <li class="timelinenew__entry" id="no3">
+                  <span class="timelinenew__id">2017.4-9月</span>
+                  <div class="timelinenew__content">
+                    <h2 class="timelinenew__heading">闭关修炼期</h2>
+                    <p class="timelinenew__text">为了将组成立下来，我们闭关修炼了一段时间，通过自己的技术，在新思路赢得了一席之地，在项目中不断成长与进步。</p>
+                  </div>
+                </li>
+                <li class="timelinenew__entry" id="no4">
+                  <span class="timelinenew__id">2017.9-12月</span>
+                  <div class="timelinenew__content timelinenew__content--flipped">
+                    <h2 class="timelinenew__heading">var：安全</h2>
+                    <p class="timelinenew__text">一次偶然的机会，接触到网络安全的比赛，我们成立了自己的CTF队伍</p>
+                  </div>
+                </li>
+                <li class="timelinenew__entry" id="no5">
+                  <span class="timelinenew__id">2018.3月</span>
+                  <div class="timelinenew__content">
+                    <h2 class="timelinenew__heading">火之意志的传承</h2>
+                    <p class="timelinenew__text">随着创始人Jin学长的毕业和新鲜血液的涌入，在新组长Peterpan0927的带领下，掀起了新一轮的革命浪潮</p>
+                  </div>
+                </li>
+                <li class="timelinenew__entry" id="no6">
+                  <span class="timelinenew__id">2018.7月</span>
+                  <div class="timelinenew__content timelinenew__content--flipped">
+                    <h2 class="timelinenew__heading">Hackday之行</h2>
+                    <p class="timelinenew__text">第二届的成员赴北京360总部参加首届Hack day挑战赛，经历了两天一夜的极限编程，杀进前了10</p>
+                  </div>
+                </li>
+                <li class="timelinenew__entry">
+                  <span class="timelinenew__id">2019</span>
+                  <div class="timelinenew__content">
+                    <h2 class="timelinenew__heading">Do Not End</h2>
+                    <p class="timelinenew__text">接下来的故事，我们在等你</p>
+                    <p style="font-size: .9cm" class="timelinenew__text">（click on each paragraph for details）</p>
+                  </div>
+                </li>
+
+
+              </ol>
+            </article>
+
+          </div>
+
+          <div class='detail-1'>
+            <img src="http://png.weweztms.cn/5df9cef7461c07b5e92450122a95630e%20%281%29.jpg" style="height: 700px;width: 940px; position: absolute;left: 2%;top: 10%;" />
+            <span>&nbsp最初的的远古时代，没有天，没有地，只有高耸的的大树、不朽的古龙和灰色的岩石，世界笼罩在一片浓雾之中；有一天，在某个阴暗的楼道里苦苦思索了许久后，jin学长带着几个热爱技术的大一新生决定开启一个新的小组，他们没有具体的方向，甚至没有固定的座位，凭借着对技术的热情，一群“黑户”开始了他们的geek生涯</span>
+          </div>
+
+          <div class='detail-2'>
+            <img src="http://png.weweztms.cn/by.JPG" style="height: 600px;width: 940px; position: absolute;left: 2%;top: 10%;" />
+            <span>因早听闻华科有三个各有千秋的互联网团队，抱着空杯学习的心态,Jin带领组内技术/PM前往华科，虚心请教三大团队负责人经验，从他们各自的管理经验和成长路线中,试图找到Geek组发展的思路.当天大雨倾盆,也不能阻挡大家炙热的心.</span>
+          </div>
+
+          <div class='detail-3'>
+            <span>短短一个月时间. 组内每个人按着一大+一小两个考核项目，从各个方面来展示小组的特色和学习能力，然后组才得到了老师的认可支持, 艰难的成立起来... </span>
+          </div>
+
+          <div class='detail-4'>
+            <img src="http://png.weweztms.cn/CTF1.jpg"/ style="height: 1000px;width: 800px; position: absolute;left: 10%;top: 6%;">
+            <span style="top:70%">这时的我们参加了一系列CTF安全比赛，并取得了出色的成绩</span>
+          </div>
+
+          <div class='detail-5'>
+            <span>随着一批学长的离开和新生的涌入，我们重新审视了整个组成立的目的和未来的道路，找到自己心中的geek精神</span>
+          </div>
+
+          <div class='detail-6'>
+            <img src="http://png.weweztms.cn/hackday1.jpg" style="height: 670px;width: 940px; position: absolute;left: 2%;top: 10%;" />
+            <span>第二届的成员赴北京360总部参加首届Hack day挑战赛，经历了两天一夜的极限编程，杀进了前10</span>
+          </div>
+
+        </div>
+
+
+        <div class="swiper-slide swiper-no-swiping" id="joinus">
+          <a href="#" class="iconfont"><img src="http://png.weweztms.cn/Back.png" /></a>
+
+
+          <div class="signup_main">
+            <div id="top1">
+
+            </div>
+              <p style="font-size:70px ;font-family: STLiti; color: #F7F5F0; margin-top:150px;margin-bottom: 100px;">
+            长按图片扫码进群<br/>
+          </p>
+          <img src="http://png.weweztms.cn/qq%20.jpg" style="height: 400px; width: 400px;margin-top: 50px"/>            <form id="frm" onsubmit="return false" action="##" method="post">
+              <label>
+                <input placeholder="姓名:" style="width: 38%;padding: 5px;" type="text" name="name" id="name">
+              </label>
+              <br>
+              <br>
+
+              <label>
+                <input placeholder="学院:" style="padding: 5px;" type="text" name="college" id="college">
+              </label>
+              <br>
+              <br>
+
+              <label>
+                <input placeholder="专业:" style="padding: 5px;" type="text" name="major" id="major">
+              </label>
+              <br>
+              <br>
+
+              <label>
+                <textarea maxlength="120" style="padding: 25px;" name="id" cols="15" rows="10" onfocus="if (value=='简要的做一下自我介绍吧...') {value=''}"
+                 onblur="if (value=='') {value='简要的做一下自我介绍吧...'}">简要的做一下自我介绍吧...</textarea>
+              </label>
+              <div id="groupnumber">
+                <p style="color: #cb9e5a;">迎新群：315507378</p>
+              </div>
+              <label>
+                <div id="tobottom">
+
+                  <input id="inputsubmit" style="background-color:#DEB887 ; border-radius: 20px; width: 23%; font-size: 1.7cm;border:0px; color:#FFE4B5;"
+                   type="button" value="提交" />
+                  
+                </div>
+              </label>
+              <br>
+
+            </form>
+
+          </div>
+ 
+        </div>
+
+      </div>
+
+      <style>
+
+        #spirit{
+        background: url('http://png.weweztms.cn/%E7%B2%BE%E7%A5%9E.png');
+        background-size:cover;
+        }
+        
+      #chengxu{
+           width: 100%;
+        height: 100%;
+        z-index: -1;
+        }
+  
+      #anquan{
+         width: 100%;
+        height: 100%;
+        z-index: -1;
+       
+        }
+      
+      #suanfa{
+         width: 100%;
+        height: 100%;
+        z-index: -1;
+       
+        }
+      #pm{
+         width: 100%;
+        height: 100%;
+        z-index: -1;
+        }
+          #joinus{
+        background-image: url('http://img.nt-geek.club/19-mobile-backgroundsign.png');
+        background-size:cover;
+        height: 100%;
+        width: 100%;
+                      
+        }/*--------------------------------------------http://png.weweztms.cn/%E7%B2%BE%E7%A5%9E.png 原本joinus背景*/
+        
+      #one{
+         background-size:80% 50% ;
+        background-repeat: no-repeat;
+        }
+        
+      #four{
+        background-size:80% 50% ;
+        background-repeat: no-repeat;
+        }
+      #two{
+        background-size:80% 50% ;
+        background-repeat: no-repeat;
+        }
+      #three{
+         background-size:80% 50% ;
+        background-repeat: no-repeat;
+        }
+      #dir{
+        background: url('http://img.nt-geek.club/19-mobile-qqq.png') ; 
+        background-size:cover;
+        }
+      
+    </style>
+
+    <script src="https://cdn.bootcss.com/Swiper/4.4.1/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+      <script type="text/javascript">
+        
+         
+window.onload=function(){
+   var bt1 = document.getElementById('1')
+          var bt2 = document.getElementById('2')
+          var bt3 = document.getElementById('3')
+          var bt4 = document.getElementById('4')
+
+          bt1.ontouchstart = function() {
+            startmove(this, 'opacity', 36)
+          }
+          bt2.ontouchstart = function() {
+            startmove(this, 'opacity', 36)
+          }
+          bt3.ontouchstart = function() {
+            startmove(this, 'opacity', 36)
+          }
+          bt4.ontouchstart = function() {
+            startmove(this, 'opacity', 36)
+          }
+          bt1.ontouchend = function() {
+            startmove(this, 'opacity', 100)
+          }
+          bt2.ontouchend = function() {
+            startmove(this, 'opacity', 100)
+          }
+          bt3.ontouchend = function() {
+            startmove(this, 'opacity', 100)
+          }
+          bt4.ontouchend = function() {
+            startmove(this, 'opacity', 100)
+          }
+    $("#begin").css("display", "none");
+            $(".swiper-container").fadeIn(1000);
+            mySwiper.update();
+            $(".direction").fadeIn(1500);
+            $('#chengxu').attr('src', $('#chengxu').attr('data-src'));
+             $('#pm').attr('src', $('#pm').attr('data-src'));
+              $('#suanfa').attr('src', $('#suanfa').attr('data-src'));
+               $('#anquan').attr('src', $('#anquan').attr('data-src'));
+
+               $('#cpw').attr('src', $('#cpw').attr('data-src'));
+               $('#kfw').attr('src', $('#kfw').attr('data-src'));
+               $('#tsw').attr('src', $('#tsw').attr('data-src'));
+               $('#aqw').attr('src', $('#aqw').attr('data-src'));
+}
+        var mySwiper = new Swiper('.swiper-container', {
+          direction: 'vertical',
+          effect: 'fade',
+          initialSlide: 0,
+          fadeEffect: {
+            crossFade: true,
+          }
+
+        })
+
+
+        $('#1').click(function() {
+          mySwiper.slideTo(1, 1000, false);
+          $('#font').fadeIn(3000);
+        })
+
+        $('#2').click(function() {
+          mySwiper.slideTo(2, 1000, false);
+        })
+
+        $('#3').click(function() {
+          mySwiper.slideTo(3, 1000, false);
+        })
+
+        $('#4').click(function() {
+          mySwiper.slideTo(4, 1000, false);
+        })
+
+        $('.iconfont').click(function() {
+          mySwiper.slideTo(0, 500, false);
+        })
+
+        $(".hide").hide();
+
+        $('#one').click(function() {
+
+          $("#anquanw").fadeIn(300);
+          $(".iconfont").css("display", "none");
+          $('.hide a').fadeIn();
+        })
+
+        $('#two').click(function() {
+
+          $("#suanfaw").fadeIn(300);
+          $(".iconfont").css("display", "none");
+          $('.hide a').fadeIn();
+        })
+
+        $('#four').click(function() {
+
+          $("#chengxuw").fadeIn(300);
+          $(".iconfont").css("display", "none");
+          $('.hide a').fadeIn();
+        })
+
+        $('#three').click(function() {
+
+          $("#pmw").fadeIn(300);
+          $(".iconfont").css("display", "none");
+          $('.hide a').fadeIn();
+        })
+
+
+
+        $('.hide a').click(function() {
+
+          $(".hide").fadeOut(200);
+          $(".iconfont").css("display", "block");
+          $(this).fadeOut(100);
+
+        })
+
+        $('#logo').click(function() {
+          $(this).toggleClass('rotation');
+        })
+
+        $('#title').click(function() {
+          $(this).toggleClass('shake');
+        })
+
+        $("#no1").click(function() {
+          $(".overflow").fadeOut();
+          $(".iconfont").css("display", "none");
+          $(".detail-1").fadeIn(300);
+        })
+        $("#no2").click(function() {
+          $(".overflow").fadeOut();
+          $(".iconfont").css("display", "none");
+          $(".detail-2").fadeIn(300);
+        })
+        $("#no3").click(function() {
+          $(".overflow").fadeOut();
+          $(".iconfont").css("display", "none");
+          $(".detail-3").fadeIn(300);
+        })
+        $("#no4").click(function() {
+          $(".overflow").fadeOut();
+          $(".iconfont").css("display", "none");
+          $(".detail-4").fadeIn(300);
+        })
+        $("#no5").click(function() {
+          $(".overflow").fadeOut();
+          $(".iconfont").css("display", "none");
+          $(".detail-5").fadeIn(300);
+        })
+        $("#no6").click(function() {
+          $(".overflow").fadeOut();
+          $(".iconfont").css("display", "none");
+          $(".detail-6").fadeIn(300);
+        })
+        $(".detail-1,.detail-2,.detail-3,.detail-4,.detail-5,.detail-6").click(function() {
+          $(this).fadeOut(300);
+          $(".overflow").fadeIn();
+          $(".iconfont").css("display", "block");
+        })
+      </script>
+
+
+      <script type="text/javascript">
+/*        function login() {
+          $.ajax({
+            //几个参数需要注意一下
+            type: "POST", //方法类型
+            dataType: "json", //预期服务器返回的数据类型
+            url: "signup.php",
+            data: $('#frm').serialize(),
+            success: function(result) {
+              console.log(result); //打印服务端返回的数据(调试用)
+              if (result.resultCode == 200) {
+                alert("提交成功");
+              };
+            },
+            error: function() {
+              alert("提交成功");
+            }
+          });
+        }
+*/
+        function getstyle(obj, name) {
+          if (obj.currentStyle) {
+            return obj.currentStyle[name]
+          } else {
+            return getComputedStyle(obj, false)[name]
+          }
+        }
+
+        function startmove(obj, attr, itarget) {
+          clearInterval(obj.timer)
+          obj.timer = setInterval(function() {
+            var cur = 0
+            if (attr == 'opacity') {
+              cur = parseFloat(getstyle(obj, attr)) * 100
+            } else {
+              cur = parseInt(getstyle(obj, attr))
+            }
+            var speed = (itarget - cur) / 2
+            speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed)
+            if (cur == itarget) {
+              clearInterval(obj.timer)
+
+            } else {
+              if (attr == 'opacity') {
+                obj.style.filter = 'alpha(opcity:' + (cur + speed) + ')'
+                obj.style.opacity = (cur + speed) / 100
+              } else {
+                obj.style[attr] = cur + speed + 'px'
+              }
+            }
+          }, 30)
+        }
+   
+      </script>
+      
+
+
+  </body>
+</html>

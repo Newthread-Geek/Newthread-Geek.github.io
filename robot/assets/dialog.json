@@ -1,0 +1,505 @@
+{
+    "fromXianzhe": [{
+        "id": "0000",
+        "details": [
+            ["Hi~很高兴遇见你。Geek组是一个比较年轻的组，组员都是具有Geek精神的人","而Gakki身为吉祥物，会在这里为你答疑解惑哦","<p style='color:red;'>请点击下方说点什么,进行选项,点击最后一个跳过开场白可以进入分类选项（不推荐）</p>"]
+        ],
+        "responses": [{
+            "content": "极客精神是什么?",
+            "nextXianzhe": ["0006"]
+        },{
+            "content": "真的吗?",
+            "nextXianzhe": ["0001"]
+        }, {
+            "content": "gakki你多大了?",
+            "nextXianzhe": ["0004"]
+        }, {
+            "content": "太棒啦!",
+            "nextXianzhe": ["0002"]
+        }, {
+             "content": "🙄跳过开场白进入分类选项",
+            "nextXianzhe": ["0031"]
+        }],
+        "nextUser": ["1000"]
+    },{
+        "id": "0030",
+        "details": [
+            ["现在你可以按分类选择你想知道的了"]
+        ]
+    },{
+        "id": "0031",
+        "details": [
+            ["<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/bishi.png'>","不是都说了不推荐跳过的吗","罢了罢了，现在你可以按分类来选择你想知道的了"]
+        ]
+    },{
+        "id": "0001",
+        "details": [
+            ["随口说说,不要在意"]
+        ],
+        "nextXianzhe": ["0003"]
+    },
+    {
+        "id": "0002",
+        "details": [
+            ["<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/happy.png'>","其实gakki也是这样想的呢","但是身为一个机器人，还是要低调一点","哎呀呀呀扯远了，快点加入Geek组吧"]
+        ],
+        "nextXianzhe": ["0003"]
+    },
+    {
+        "id": "0003",
+        "details": [
+            ["那么对于Geek组有什么想知道的呢"]],
+        "responses": [{
+            "content": "什么时候招新啊?",
+            "nextXianzhe": ["0007"]
+        },{
+            "content": "我们组有哪些方向呀",
+            "nextXianzhe": ["0022"]
+        },{
+            "content": "我还是比较想了解gakki你呢？",
+            "nextXianzhe": ["0005"]
+        },{
+            "content": "我什么也不想知道",
+            "nextXianzhe": ["0009"]
+        }]
+    }, {
+        "id": "0004",
+        "details": [
+           [" 啧","刚上来就问这种问题也太不礼貌了吧!","<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/bishi.png'>"]
+        ], "nextXianzhe": ["0003"]
+    }, {
+        "id": "0005",
+        "details": [
+            ["这等你加入我们之后就会了解啦", 
+                "如果有想法提前进来,也可以加群：315507378 与学长学姐联系，招新时间有什么变动也会在群里通知的~","接下来了解下组内情况吧"]
+        ],
+        "responses": [{
+            "content": "我想了解开发方向",
+            "nextXianzhe": ["0011"]
+        }, {
+            "content": "我想了解AI/算法方向",
+            "nextXianzhe": ["0012"]
+        },{
+            "content": "我想了解PM方向",
+            "nextXianzhe": ["0013"]
+        },{
+            "content": "我想了解安全方向",
+            "nextXianzhe": ["0014"]
+        }]
+    }, {
+        "id": "0006",
+        "details": [
+           ["所谓<p style='color:red;'>极客精神</p>,gakki的理解是<p style='color:red;'>爱钻研，能折腾</p>","如果还不是很了解呢，那就要你自己去动手搜索了:)"]
+        ], "nextXianzhe": ["0003"]
+    },{
+        "id": "0022",
+        "details": [
+            ["总共四个大方向","想看哪个呢"]
+        ],
+         "responses": [{
+            "content": "我想了解开发方向",
+            "nextXianzhe": ["0011"]
+        }, {
+            "content": "我想了解AI/算法方向",
+            "nextXianzhe": ["0012"]
+        },{
+            "content": "我想了解PM方向",
+            "nextXianzhe": ["0013"]
+        },{
+            "content": "我想了解安全方向",
+            "nextXianzhe": ["0014"]
+        },{
+            "content": "知道点其他的",
+            "nextXianzhe": ["0016"]
+        }]
+    },
+    {
+        "id": "0007",
+        "details": [
+            [
+                "按照惯例，正式招新时间是9月下旬~10月上旬，不过今年可能会有一些改动",
+                "地点一般在9号教学楼",
+                "如果有想法提前进来,也可以加群：315507378与学长学姐联系，招新时间有什么变动也会在群里通知的~",
+                "gakki在这等着你~"
+            ]
+        ],
+        "nextXianzhe": ["0008"]
+    }, {
+        "id": "0008",
+        "details": [
+            ["还想知道什么呢"]
+        ],
+        "responses": [{
+            "content": "我什么也不想知道",
+            "nextXianzhe": ["0009"]
+        }, {
+            "content": "我还是比较想了解gakki你呢",
+            "nextXianzhe": ["0005"]
+        }]
+    }, {
+        "id": "0009",
+        "details": [
+            ["<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/nanshou.png'>"
+        ,"看来是不喜欢gakki","那就再见吧！"]],
+        "responses": [{
+            "content": "...开玩笑的,我错了",
+            "nextXianzhe": ["0010"]
+        }]
+    }, {
+        "id": "0010",
+        "details": [
+            ["既然你诚心诚意的道歉了","那我就勉为其难的原谅你好了","那么接下来了解一下组内情况吧"]
+        ],
+        "responses": [{
+            "content": "我想了解开发方向",
+            "nextXianzhe": ["0011"]
+        }, {
+            "content": "我想了解AI/算法方向",
+            "nextXianzhe": ["0012"]
+        },{
+            "content": "我想了解PM方向",
+            "nextXianzhe": ["0013"]
+        },{
+            "content": "我想了解安全方向",
+            "nextXianzhe": ["0014"]
+        },{
+            "content": "知道点其他的",
+            "nextXianzhe": ["0016"]
+        }]
+    }, {
+        "id": "0011",
+        "details": [
+            ["<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/kaixin.png'>","我们的开发方向包含前端web网页,后端服务器,移动端iOS/Android","我们组内不限制编程语言，不一定需要基础，但是你要有热情与自律","如果想要了解更加具体的信息，可以添加开发负责人QQ:527382125，别忘了备注~"]
+        ],
+        "responses": [{
+            "content": "再看看其他方向",
+            "nextXianzhe": ["0020"]
+        }, {
+            "content": "知道点其他的",
+            "nextXianzhe": ["0016"]
+        }]
+
+    }, {
+        "id": "0012",
+        "details": [
+            ["<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/kaixin.png'>","算法是每个程序员的根基所在","由此衍生的AR是未来的发展趋势","至于AI...要求就有些高了","不过如果你能耐得住数学计算的枯燥，并且有一颗越挫越勇的心，我们也欢迎你的加入~","如果想要了解更加具体的信息，可以添加QQ:1372378646，别忘了备注~"]
+        ],
+        "responses": [{
+            "content": "再看看其他方向",
+            "nextXianzhe": ["0020"]
+        }, {
+            "content": "知道点其他的",
+            "nextXianzhe": ["0016"]
+        }]
+    }, {
+        "id": "0013",
+        "details": [
+            ["<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/kaixin.png'>","PM是一个组的策划者，同时也负责产品的UI和设计","毕竟Geek组也要全面发展嘛~","如果想要了解更加具体的信息，可以添加QQ:939732099，别忘了备注~"]
+        ],
+        "responses": [{
+            "content": "再看看其他方向",
+            "nextXianzhe": ["0020"]
+        }, {
+            "content": "知道点其他的",
+            "nextXianzhe": ["0016"]
+        }]
+    }, {
+        "id": "0014",
+        "details": [
+            [ "<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/kaixin.png'>","主要涉及网络攻防、漏洞挖掘，CTF安全竞赛等领域","当然你对安全其他的方面感兴趣，我们也是欢迎的~","如果想要了解更加具体的信息,可以添加QQ:1509809723" ,"别忘了备注~"]
+        ],
+          "responses": [{
+            "content": "再看看其他方向",
+            "nextXianzhe": ["0020"]
+        }, {
+            "content": "知道点其他的",
+            "nextXianzhe": ["0016"]
+        }]
+    }, {
+        "id": "0016",
+        "details": [
+            [
+               "下面再来聊一下我们组的日常吧,要成为我们中的一份子有些规则是要遵守的呢~"
+            ]
+        ],
+        "responses": [{
+            "content": "好啊,平时在组内待的时间是什么样的呢? ","nextXianzhe": ["0017"]
+        }, {
+            "content": "组内的氛围是什么样的呢?","nextXianzhe": ["0018"]
+        },{
+            "content": "如果需要考核的话有什么要求呀?","nextXianzhe": ["0019"]
+        },{
+            "content": "聊聊其他的吧"
+        }
+    ]
+    }, {
+        "id": "0017",
+        "details": [
+            ["我们是一个相对来说非常自由的团体", "在组内学习的方向是以兴趣为主","平时在组内的时间每周在四十小时左右就好了","毕竟gakki也想和你多相处一会儿呀","<img src='http://p6x17799f.bkt.clouddn.com/FF50E29D423F4BB26E8A1FA355272719.png'>"]
+           ],
+        "nextXianzhe": ["0016"]
+    }, {
+        "id": "0018",
+        "details": [
+            ["平时的课余时间学长学姐们基本都会在实验室", "学习之余也可以和学长学姐们聊聊天，都是一些很随和的人","<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/kaixin.png'>","每周日会开技术例会，大家一起学习点新知识，会交流一下这一周的学习心得等等","还会不定期的举行活动哦~"]
+        ],
+        "nextXianzhe": ["0016"]
+    }, {
+        "id": "0019",
+        "details": [
+            [
+                "考核的话",
+                "emmmm...",
+                "还是比较严格的,别紧张hhh,开玩笑啦~",
+                "首先会有一轮笔试,再加两轮面试",
+                "就可以进入我们的考核期成为预备成员","做完新人任务之后就可以成为正式成员啦",
+                "gakki会一直陪着你哟~"
+            ]
+        ],"nextXianzhe": ["0016"],
+        "nextUser": ["1000"]
+    },{
+        "id": "0020",
+        "details": [
+            ["还想看啥呢","<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/keai.png'>"]
+        ],
+        "responses": [{
+            "content": "我想了解开发方向",
+            "nextXianzhe": ["0011"]
+        }, {
+            "content": "我想了解AI/算法方向",
+            "nextXianzhe": ["0012"]
+        },{
+            "content": "我想了解PM方向",
+            "nextXianzhe": ["0013"]
+        },{
+            "content": "我想了解安全方向",
+            "nextXianzhe": ["0014"]
+        },{
+            "content": "知道点其他的",
+            "nextXianzhe": ["0016"]
+        }]
+    },{
+        "id": "1020",
+        "details": [[
+            "加入geek组的要求很严格,那么进来之后都有什么福利呢?",
+            "首先,小组里的每一个成员都有1对1的新人指引",
+            "组内管理比较宽松,在尊重其他人的前提下可以尽情发挥自己的个性",
+            "我们组不用打卡，时间自由安排",
+            "在可能平淡的大学生活中给自己一个改变的机会，与同样疯狂的人把你疯狂的idea实现出来。磨砺自己的耐性，培养自己的互联网思维，成就自己的梦想",
+            "Lab设备/网络资源都非常充足,可能是学校实验室最好的条件之一,闲暇之余也有组织活动与聚餐,体育运动也是大力提倡的",
+            "我们组的带队老师是团队的创始人,有许多的故事等你来听~😆"]
+        ],
+        "responses": [{
+            "content": "问问其他问题",
+            "nextXianzhe": ["0030"]
+        }]
+    },{
+        "id": "1021",
+        "details": [[
+            "第一轮，笔试。考虑到有学习能力很强的新生，但技术和经验尚缺，所以笔试多是一些视野性的题目。这一轮选拔淘汰率不高，主要筛掉态度较差的同学。",
+            "第二轮，单面。这一轮先根据你的笔试问及一些技术相关的问题,再问一些兴趣爱好以及个人的看法,最后你可以提出问题。",
+            "最后一轮，群面。首先问时间分配上的问题，尽可能避免出现时间冲突和精力不足的情况。我们会向你提出各种各样的问题。",
+            "这一轮中的许多题目其实并不算困难，答案是否标准也不是重点，重点是考察同学面对压力时的逻辑思维。"]
+        ],
+        "responses": [{
+            "content": "问问其他问题",
+            "nextXianzhe": ["0030"]
+        }]
+    },{
+        "id": "1022",
+        "details": [[
+        "说说你想知道的吧"
+        ]
+        ],
+        "responses": [{
+            "content": "像Newthread这样的互联网团队是不是只有计科院的才可以加入？",
+            "nextXianzhe": ["2002"]
+        },{
+            "content": "没有基础的大一新生可以加吗？大二呢？大三呢？",
+            "nextXianzhe": ["2001"]
+        },{
+            "content": "问问其他问题",
+            "nextXianzhe": ["0030"]
+        }]
+    },{
+        "id": "1023",
+        "details": [[
+"你要知道大学是一个可以自由安排自己学习生活的地方","你已经成年了,上课之余，需要不断充实自己，激励自己最好的方法就是和比自己更优秀的人在一起。","团队不缺优秀的人，而我们也期待同样优秀的你，让我们一起前进！ 总有比你优秀的人比你更努力！"
+        ]
+        ],
+        "responses": [{
+            "content": "嗯嗯",
+            "nextXianzhe": ["0030"]
+        }]
+    },{
+        "id": "1024",
+        "details": [["在你通过三轮的测试后","你就可以进入考核期了","有什么问题吗"]
+        ],
+        "responses": [{
+            "content": "进入团队要经过哪些阶段？",
+            "nextXianzhe": ["4001"]
+        },{
+            "content": "过了考核期之后的生活时什么样的？",
+            "nextXianzhe": ["4002"]
+        },{
+            "content": "看看其他问题",
+            "nextXianzhe": ["0030"]
+        }]
+    },{
+        "id": "1033",
+        "details": [["首先，你应该想清楚你是不是真的对计算机感兴趣","然后，有意愿加入Geek组的话，先做一篇自我介绍，并以邮件的形式发到<p style='color:red;'>1549346936@qq.com</p>","我们收到邮件之后会进行审核，审核通过之后会回复你我们的迎新QQ群号，之后你就可以加群啦" 
+        ]],
+        "responses": [{
+            "content": "问问其他问题",
+            "nextXianzhe": ["0030"]
+        }]
+    },{
+        "id": "2001",
+        "details": [[
+"当然可以，我们看中的不是你本来能力有多强，而是看中你的学习能力有多强。","<p style='color:red;'>在此之前，希望你对你以后想要为之付出的方向多做一些了解</p>","大二的同学在经过了之前一年学习，已经有了足够的知识储备,现在加入geek组也非常合适."
+ ,"每位大牛🐮都是从零开始的！"]
+        ],
+        "responses": [{
+            "content": "像Newthread这样的互联网团队是不是计科院的才可以加入？",
+            "nextXianzhe": ["2002"]
+        },{
+            "content": "看看其他问题",
+            "nextXianzhe": ["0030"]
+        }]
+    },{
+        "id": "2002",
+        "details": [[
+"当然不是，Newthread团队面向全校招生","虽然团队里的组员大部分都是计科院的","但我们仍然拥有数统、电信、美院等各大学院的学生，并不是只有猿哦"
+        ]
+        ],
+        "responses": [{
+            "content": "没有基础的大一新生可以加吗？大二呢？大三呢？",
+            "nextXianzhe": ["2001"]
+        },{
+            "content": "看看其他问题",
+            "nextXianzhe": ["0030"]
+        }]
+    },{
+        "id": "3001",
+        "details": [[
+"你可以向网站编写人员反馈出现的BUG","<a href='http://wpa.qq.com/msgrd?v=3&uin=2584172930&site=qq&menu=yes'>点击链接建立聊天</a>"
+        ]
+        ],
+        "responses": [{
+            "content": "知道了",
+            "nextXianzhe": ["0030"]
+        }]
+    },{
+        "id": "4001",
+        "details": [["初入时有一段新人考核期，在考核期间每人会拥有一位'长者'带你入门，在考核期间学习技术与知识，完成每周的新人任务","后再进行一次考核和筛选后成为Geek组正式队员","人在考核期必须满足每周40个小时的在实验室时间,所以考核期也不可以懈怠哦！"]
+        ],
+        "responses": [{
+            "content": "过了考核期之后的生活时什么样的？",
+            "nextXianzhe": ["4002"]
+        },{
+            "content": "看看其他问题",
+            "nextXianzhe": ["0030"]
+        }]
+    },{
+        "id": "4002",
+        "details": [["成为Geek正式成员后，虽然没有之前考核期的新人任务，时间相对自由，但是面临着更大的挑战","这时的你需要自己规划自己的学习生活，不断前进，同时也可以跟团队其它组的成员一起完成你的作品或者参与比赛。","疯狂的生活才刚刚开始！"]
+        ],
+        "responses": [{
+            "content": "进入团队有什么阶段？",
+            "nextXianzhe": ["4001"]
+        },{
+            "content": "看看其他问题",
+            "nextXianzhe": ["0030"]
+        }]
+    },{
+        "id": "5001",
+        "details": [["我们希望你有很强的<p style='color:red;'>自学能力</p>","同时关注新事物、新技术，有较强的自学能力，喜欢挑战","乐观开朗，逻辑性强，善于和各种文化的人合作。 ","“每个人都可以做自己想做的事情，每个人的方向不一样。如果你想做某个产品，或者你有一个不错的 idea，那么就可以找志同道合的人一起合作。”"]],
+        "responses": [{
+            "content": "看看其他问题",
+            "nextXianzhe": ["0030"]
+        }]
+    },{
+        "id": "7001",
+    "details": [["在2018年8月份，我们在360hakcaday的产品创新挑战赛的决赛中获得了前十的名次，并且和<p style='color:red;'>“红衣教主”</p>，也就是360的创始人周鸿祎进行了交流（有图有真相~）",
+        "<img src='http://image.ldlzds.cn/hackaday2.jpg'>","然后我们组的野比同学，在2018年ISC中，和大佬们近距离接触啦~","不知道你有没有看过《whoami》这部电影呢？下图中的高个就是电影的原型人物Benjamin Kunz Mejr啦~因为太厉害了，等gakki描述完估计花儿都已经谢啦，你自己去查啦~",
+        "<img src='http://image.ldlzds.cn/ISC1.jpg'>"]],
+    "responses": [{
+        "content": "看看其他问题",
+        "nextXianzhe": ["0030"]
+    }]
+    }],
+    "fromUser": [{
+        "id": "1000",
+        "brief": "回到开场白",
+        "details": [
+            "回到开场白"
+        ],
+        "nextXianzhe": ["0000"]
+    },{
+        "id":"1001",
+        "brief":"组内方向",
+        "details": ["那我们组有哪些方向呢？"],
+        "nextXianzhe": ["0022"]
+    },{
+        "id": "1002", 
+        "brief": "加入要求",
+        "details": [
+            "加入组内有什么要求呢"
+        ],
+        "nextXianzhe": ["1022"]
+    },{
+        "id": "1003", 
+        "brief": "报名流程",
+        "details": [
+            "如果我想加入Geek组，应该怎么做呢？"
+        ],
+        "nextXianzhe": ["1033"]
+    },{
+        "id": "1004",
+        "brief": "组内福利",
+        "details": ["我想知道有什么福利"
+        ],
+        "nextXianzhe": ["1020"]
+    },{
+        "id":"1005",
+        "brief":"最近动态",
+        "details": ["组内最近发生了什么大事呢？"],
+        "nextXianzhe": ["7001"]
+    },{
+        "id": "1006",
+        "brief": "时间安排",
+        "details": [
+            "进入团队会耽误我的学习时间吗？"
+        ],
+        "nextXianzhe": ["1023"]
+    },{
+        "id": "1007",
+        "brief": "考核流程",
+        "details": [
+            "说说考核流程吧"
+        ],
+        "nextXianzhe": ["1021"]
+    },{
+        "id": "1008",
+        "brief": "考核期须知",
+        "details": [
+            "考核期的时候是怎么样子的"
+        ],
+        "nextXianzhe": ["1024"]
+    },  {
+        "id": "1009",
+        "brief": "组内期望",
+        "details": [
+            "说说组内期望吧"
+
+        ],
+        "nextXianzhe": ["5001"]
+    },{
+        "id": "1009",
+        "brief": "BUG反馈",
+        "details": [
+            "这个网站出现了问题😔"
+        ],
+        "nextXianzhe": ["3001"]
+    }]
+}
