@@ -29,7 +29,7 @@
     },{
         "id": "0031",
         "details": [
-            ["<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/bishi.png'>","不是都说了不推荐跳过的吗","罢了罢了，现在你可以按分类来选择你想知道的了"]
+            ["<img style='width:25px;height:25px;'src='http://img.nt-geek.club/19-robot-icon-bishi.png'>","不是都说了不推荐跳过的吗","罢了罢了，现在你可以按分类来选择你想知道的了"]
         ]
     },{
         "id": "0001",
@@ -41,7 +41,7 @@
     {
         "id": "0002",
         "details": [
-            ["<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/happy.png'>","其实gakki也是这样想的呢","但是身为一个机器人，还是要低调一点","哎呀呀呀扯远了，快点加入Geek组吧"]
+            ["<img style='width:25px;height:25px;'src='http://img.nt-geek.club/19-robot-icon-happy.png'>","其实gakki也是这样想的呢","但是身为一个机器人，还是要低调一点","哎呀呀呀扯远了，快点加入Geek组吧"]
         ],
         "nextXianzhe": ["0003"]
     },
@@ -65,7 +65,7 @@
     }, {
         "id": "0004",
         "details": [
-           [" 啧","刚上来就问这种问题也太不礼貌了吧!","<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/bishi.png'>"]
+           [" 啧","刚上来就问这种问题也太不礼貌了吧!","<img style='width:25px;height:25px;'src='http://img.nt-geek.club/19-robot-icon-bishi.png'>"]
         ], "nextXianzhe": ["0003"]
     }, {
         "id": "0005",
@@ -139,7 +139,7 @@
     }, {
         "id": "0009",
         "details": [
-            ["<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/nanshou.png'>"
+            ["<img style='width:25px;height:25px;'src='http://img.nt-geek.club/19-robot-icon-nanshou.png'>"
         ,"看来是不喜欢gakki","那就再见吧！"]],
         "responses": [{
             "content": "...开玩笑的,我错了",
@@ -169,7 +169,7 @@
     }, {
         "id": "0011",
         "details": [
-            ["<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/kaixin.png'>","我们的开发方向包含前端web网页,后端服务器,移动端iOS/Android","我们组内不限制编程语言，不一定需要基础，但是你要有热情与自律","如果想要了解更加具体的信息，可以添加开发负责人QQ:527382125，别忘了备注~"]
+            ["<img style='width:25px;height:25px;'src='http://img.nt-geek.club/19-robot-icon-kaixin.png'>","我们的开发方向包含前端web网页,后端服务器,移动端iOS/Android","我们组内不限制编程语言，不一定需要基础，但是你要有热情与自律","如果想要了解更加具体的信息，可以添加开发负责人QQ:527382125，别忘了备注~"]
         ],
         "responses": [{
             "content": "再看看其他方向",
@@ -182,7 +182,7 @@
     }, {
         "id": "0012",
         "details": [
-            ["<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/kaixin.png'>","算法是每个程序员的根基所在","由此衍生的AR是未来的发展趋势","至于AI...要求就有些高了","不过如果你能耐得住数学计算的枯燥，并且有一颗越挫越勇的心，我们也欢迎你的加入~","如果想要了解更加具体的信息，可以添加QQ:1372378646，别忘了备注~"]
+            ["<img style='width:25px;height:25px;'src='http://img.nt-geek.club/19-robot-icon-kaixin.png'>","算法是每个程序员的根基所在","由此衍生的AR是未来的发展趋势","至于AI...要求就有些高了","不过如果你能耐得住数学计算的枯燥，并且有一颗越挫越勇的心，我们也欢迎你的加入~","如果想要了解更加具体的信息，可以添加QQ:1372378646，别忘了备注~"]
         ],
         "responses": [{
             "content": "再看看其他方向",
@@ -194,7 +194,7 @@
     }, {
         "id": "0013",
         "details": [
-            ["<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/kaixin.png'>","PM是一个组的策划者，同时也负责产品的UI和设计","毕竟Geek组也要全面发展嘛~","如果想要了解更加具体的信息，可以添加QQ:939732099，别忘了备注~"]
+            ["<img style='width:25px;height:25px;'src='http://img.nt-geek.club/19-robot-icon-kaixin.png'>","PM是一个组的策划者，同时也负责产品的UI和设计","毕竟Geek组也要全面发展嘛~","如果想要了解更加具体的信息，可以添加QQ:939732099，别忘了备注~"]
         ],
         "responses": [{
             "content": "再看看其他方向",
@@ -206,7 +206,7 @@
     }, {
         "id": "0014",
         "details": [
-            [ "<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/kaixin.png'>","主要涉及网络攻防、漏洞挖掘，CTF安全竞赛等领域","当然你对安全其他的方面感兴趣，我们也是欢迎的~","如果想要了解更加具体的信息,可以添加QQ:1509809723" ,"别忘了备注~"]
+            [ "<img style='width:25px;height:25px;'src='http://img.nt-geek.club/19-robot-icon-kaixin.png'>","主要涉及网络攻防、漏洞挖掘，CTF安全竞赛等领域","当然你对安全其他的方面感兴趣，我们也是欢迎的~","如果想要了解更加具体的信息,可以添加QQ:1509809723" ,"别忘了备注~"]
         ],
           "responses": [{
             "content": "再看看其他方向",
@@ -241,7 +241,7 @@
     }, {
         "id": "0018",
         "details": [
-            ["平时的课余时间学长学姐们基本都会在实验室", "学习之余也可以和学长学姐们聊聊天，都是一些很随和的人","<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/kaixin.png'>","每周日会开技术例会，大家一起学习点新知识，会交流一下这一周的学习心得等等","还会不定期的举行活动哦~"]
+            ["平时的课余时间学长学姐们基本都会在实验室", "学习之余也可以和学长学姐们聊聊天，都是一些很随和的人","<img style='width:25px;height:25px;'src='http://img.nt-geek.club/19-robot-icon-kaixin.png'>","每周日会开技术例会，大家一起学习点新知识，会交流一下这一周的学习心得等等","还会不定期的举行活动哦~"]
         ],
         "nextXianzhe": ["0016"]
     }, {
@@ -260,7 +260,7 @@
     },{
         "id": "0020",
         "details": [
-            ["还想看啥呢","<img style='width:25px;height:25px;'src='http://image.ldlzds.cn/keai.png'>"]
+            ["还想看啥呢","<img style='width:25px;height:25px;'src='http://img.nt-geek.club/19-robot-icon-keai.png'>"]
         ],
         "responses": [{
             "content": "我想了解开发方向",
@@ -421,8 +421,8 @@
     },{
         "id": "7001",
     "details": [["在2018年8月份，我们在360hakcaday的产品创新挑战赛的决赛中获得了前十的名次，并且和<p style='color:red;'>“红衣教主”</p>，也就是360的创始人周鸿祎进行了交流（有图有真相~）",
-        "<img src='http://image.ldlzds.cn/hackaday2.jpg'>","然后我们组的野比同学，在2018年ISC中，和大佬们近距离接触啦~","不知道你有没有看过《whoami》这部电影呢？下图中的高个就是电影的原型人物Benjamin Kunz Mejr啦~因为太厉害了，等gakki描述完估计花儿都已经谢啦，你自己去查啦~",
-        "<img src='http://image.ldlzds.cn/ISC1.jpg'>"]],
+        "<img src='http://img.nt-geek.club/19-hackaday2.jpg>","然后我们组的野比同学，在2018年ISC中，和大佬们近距离接触啦~","不知道你有没有看过《whoami》这部电影呢？下图中的高个就是电影的原型人物Benjamin Kunz Mejr啦~因为太厉害了，等gakki描述完估计花儿都已经谢啦，你自己去查啦~",
+        "<img src='http://img.nt-geek.club/19-ISC1.jpg'>"]],
     "responses": [{
         "content": "看看其他问题",
         "nextXianzhe": ["0030"]
